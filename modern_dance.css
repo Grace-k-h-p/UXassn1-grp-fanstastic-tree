@@ -63,40 +63,43 @@ body {
             text-align: start;
             width:60%; 
             height:20px;
+            
         }
        
             
             
         
-        .gender{
+        .form input#gender {
             text-align: left; 
-            width: 100px;
-            justify-items: left;
-                   }
+            width: 30px;
+            justify-items: center;
+            margin-left: 30%;
+            }
         
-        .form label{
-            text-align: left;
-            width:200px;
-            display: inline-block;
-        }
+
+        
+        
+
         .form textarea{
             border-radius: 10px;
             border:none;
             margin-top:10px;
-            width:59%; 
+            width:89%; 
             height:50px;
-            margin-left:2px;
+            
+            justify-content: center;
 
             
         }
 
         .why{
-            text-align: left; 
-            width:5px;
-            margin-bottom: 5px; 
-            padding-bottom:5px;
+            margin-bottom: 3px; 
             
+           
             
-        }
+          }
 
-        
+       .form label{
+            width:200px;
+            display: inline-block;
+        }
