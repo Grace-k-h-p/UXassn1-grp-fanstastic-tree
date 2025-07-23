@@ -1,4 +1,4 @@
-/* applicable for homepage & schedule */
+/* === Reset & Base Styles === */
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +8,28 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  background-color: #f7f7f7;
+  background-color: #9cbcd3;
   color: #333;
+  margin: 0;
   padding-bottom: 60px;
 }
 
-/* navigation */
+/* === Shared Box Styles (Cards/Sections) === */
+section,
+.info-grid > div,
+footer,
+form,
+.card,
+.box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 1100px;
+}
+
+/* === Header & Navigation === */
 header {
   background: #ffffff;
   padding: 20px 40px;
@@ -27,7 +43,7 @@ nav {
 }
 
 nav img.logo {
-  height: 40px;
+  height: 60px;
 }
 
 nav ul {
@@ -46,7 +62,7 @@ nav ul li a:hover {
   color: #0077cc;
 }
 
-/* hero */
+/* === Hero Section === */
 .hero {
   background: #ddd;
   text-align: center;
@@ -77,21 +93,17 @@ nav ul li a:hover {
   background: #005fa3;
 }
 
-/* About + Spotlight */
+/* === Info Grid (About & Member Spotlight) === */
 .info-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px;
   padding: 40px 60px;
-  gap: 40px;
-  background: #fff;
 }
 
 .info-grid > div {
   flex: 1 1 45%;
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 8px;
 }
 
 .info-grid h2 {
@@ -99,16 +111,30 @@ nav ul li a:hover {
   font-size: 22px;
 }
 
-blockquote {
-  font-style: italic;
-  padding: 10px;
-  border-left: 4px solid #0077cc;
-  background: #eef5fb;
+.info-grid .col-md-6 {
+  margin-bottom: 30px;
 }
 
+/* === Member Spotlight === */
+blockquote {
+  font-style: italic;
+  padding: 10px 15px;
+  border-left: 4px solid #0077cc;
+  background: #eef5fb;
+  margin-bottom: 15px;
+}
+
+.spotlight-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* === Schedule Table === */
 .schedule {
   padding: 40px 60px;
-  background: #fff;
 }
 
 .schedule h1 {
@@ -141,4 +167,10 @@ tbody tr:nth-child(even) {
   margin-top: 20px;
   font-size: 14px;
   text-align: center;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 20px;
 }
