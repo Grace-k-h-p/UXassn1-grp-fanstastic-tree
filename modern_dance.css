@@ -75,7 +75,13 @@ body {
             justify-items: center;
             margin-left: 30%;
             }
-        
+
+         .form input#sch {
+            text-align: left; 
+            width: 30px;
+            justify-items: center;
+            margin-left: 30%;
+            }
 
         
         
