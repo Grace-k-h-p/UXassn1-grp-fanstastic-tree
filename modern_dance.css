@@ -1,9 +1,11 @@
 
+/*navigation bar*/
 body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family:Arial, Helvetica, sans-serif;
             background-color: #e9f5ff;
+            font-size: 20px;
         }
         .navigation {
             background-color: #bcd8ec; 
@@ -11,29 +13,157 @@ body {
             width: 100%;
         }
         .navi-line {
-            margin: 0 15px;
+            
             text-decoration: none;
             color: black;
-            font-size: 20px;
-            font-family:'Material Symbols Outined';
-           
+            font-size: 25px;
+            
+            padding-left: 20px; 
+        }
+
+        table.top{
+            width: 1250px;
+            height: 100px;
+            margin-right:100px;
+            background-color: #bcd8ec;
+            border-collapse: collapse;
         }
         
         a.navi-line:hover {
             color: #0095ff;   
         }
+        #logo {
+            width: 50%;
+            height: 40%;
+            justify-content: left;  
+        }
         .logo {
-            width: 20%;
-            height: 10%;
-            text-align:left;
+            width: 200px;
+            
+            margin-left: 20px;
+            margin-top: 10px;
         }
     
-        td{
-            color: #000;
-            margin:0;
-            text-align: center;
-        }
-        .form{
+
+.navi-line {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family:'Material Symbols Outined';
+    
+}
+
             
-            background-color: aliceblue;
+        
+        .submit{
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+            height: 30px;
+            background-color: #0095ff;
+            color: white;
+            font-weight: bold;
+            margin-left:85%;
+            
+            
         }
+        .form input{
+            border-radius: 5px;
+            border:none;
+            margin-left: 30px; 
+            text-align: start;
+            width:60%; 
+            height:20px;
+            
+        }
+       
+            
+            
+        
+        .form input#gender {
+            text-align: left; 
+            width: 30px;
+            justify-items: center;
+            margin-left: 30%;
+            }
+            #sch {
+            justify-items: center;
+            margin-left: 9%;
+            }
+
+td{
+    color: #000;
+    margin:0;
+    text-align: center;
+}
+.form{
+    margin: 80px auto;
+    width: 80%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 207, 207);
+
+    
+}
+.submit{
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background-color: #0095ff;
+    color: white;
+    font-weight: bold;
+    margin-left:85%;
+    
+    
+}
+.form input{
+    border-radius: 5px;
+    border:none;
+    margin-left: 30px; 
+    text-align: start;
+    width:60%; 
+    height:20px;
+    
+}
+
+    
+    
+
+.form input#gender {
+    text-align: left; 
+    width: 30px;
+    justify-items: center;
+    margin-left: 30%;
+    }
+
+
+
+
+
+.form textarea{
+    border-radius: 10px;
+    border:none;
+    margin-top:10px;
+    width:89%; 
+    height:50px;
+    
+    justify-content: center;
+
+    
+}
+
+.why{
+    margin-bottom: 3px; 
+    
+    
+    
+    }
+
+.form label{
+    width:200px;
+    display: inline-block;
+}
