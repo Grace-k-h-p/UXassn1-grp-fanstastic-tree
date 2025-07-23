@@ -6,29 +6,10 @@
   <title>Modern Dance | Schedule</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   
+  <link rel="stylesheet" href="modern_dance.css">
   <style>
-    th, td {
-  padding: 15px;
-  text-align: center;
-  border: 1px solid #ddd;
-}
-/* === Reset & Base Styles === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background-color: #9cbcd3;
-  color: #333;
-  margin: 0;
-  padding-bottom: 60px;
-}
-
-/* === Shared Box Styles (Cards/Sections) === */
+    /* === Shared Box Styles (Cards/Sections) === */
 section,
 .info-grid > div,
 footer,
@@ -42,176 +23,24 @@ form,
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   max-width: 1100px;
 }
-
-
-
-
-.btn {
-  background: #0077cc;
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background: #005fa3;
-}
-
-/* === Info Grid (About & Member Spotlight) === */
-.info-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 40px 60px;
-}
-
-.info-grid > div {
-  flex: 1 1 45%;
-}
-
-.info-grid h2 {
-  margin-bottom: 15px;
-  font-size: 22px;
-}
-
-.info-grid .col-md-6 {
-  margin-bottom: 30px;
-}
-
-/* === Member Spotlight === */
-blockquote {
-  font-style: italic;
-  padding: 10px 15px;
-  border-left: 4px solid #0077cc;
-  background: #eef5fb;
-  margin-bottom: 15px;
-}
-
-.spotlight-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  display: block;
-  margin-top: 10px;
-}
-
-/* === Schedule Table === */
-.schedule {
-  padding: 40px 60px;
-}
-
-.schedule h1 {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #f9f9f9;
-}
-
-thead {
-  background-color: #333;
-  color: white;
-}
-
-
-
-tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-.note {
-  margin-top: 20px;
-  font-size: 14px;
-  text-align: center;
-}
-
-/* === Footer === */
-footer {
-  text-align: center;
-  padding: 20px;
-}
-.navigation {
-            background-color: #bcd8ec; 
-            max-width: fit-content;
-            width: 100%;
-        }
-        .navi-line {
-            
-            text-decoration: none;
-            color: black;
-            font-size: 25px;
-            
-            padding-left: 20px; 
-        }
-
-        table.top{
-            width: 1250px;
-            height: 100px;
-            margin-right:100px;
-            background-color: #bcd8ec;
-            border-collapse: collapse;
-        }
-        
-        a.navi-line:hover {
-            color: #0095ff;   
-        }
-        #logo {
-            width: 50%;
-            height: 40%;
-            justify-content: left;  
-        }
-        .logo {
-            width: 200px;
-            
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-    
-
-.navi-line {
-    margin: 0 15px;
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
-    font-family:'Material Symbols Outined';
-    
-}
-
-            
   </style>
 </head>
 <body>
+   <header class="bg-white shadow-sm">
+    <nav class="container d-flex flex-wrap align-items-center justify-content-between py-3">
+      <img src="UX assn2 logo.png" alt="Modern Dance Logo" class="logo" height="60">
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-dark" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="schedule.html">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="awards_history.html">Awards and History</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="upcmg.html">Sign Up</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="Sign_up_page.html">Sign Up</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="contactUs_page.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
 
-   <div class="navigation">
-        <table  border="0" class="top" >
-            <tbody>
-            <tr>
-                <td rowspan="2" class="logo">
-                    <img src="UX assn2 logo.png" alt="Logo"  id="logo">
-                </td>
-                <td>
-                    <h1>Modern Dance</h1>
-                </td>
-            </tr>
-            <tr>
-                <td class="navi-line">
-                <a href="home.html" class="navi-line">Home</a>
-                <a href="schedule.html" class="navi-line">Schedule</a>
-                <a href="awardsnhist.html" class="navi-line" > Award  </a>
-                <a href="upcmg.html" class="navi-line" >Upcoming Events </a> 
-                <a href="Sign_up_page.html" class="navi-line"> Sign up</a>
-                <a href="contactUs_page.html" class="navi-line" > Contact us </a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+   
 
   <main class="container py-5">
     <h1 class="text-center mb-4">Practice Schedule</h1>
