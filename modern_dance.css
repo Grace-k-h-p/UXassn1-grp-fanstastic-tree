@@ -94,9 +94,8 @@ body {
             }
 
 td{
-    color: #000;
-    margin:0;
-    text-align: center;
+ text-align: center;
+ 
 }
 .form{
     margin: 80px auto;
