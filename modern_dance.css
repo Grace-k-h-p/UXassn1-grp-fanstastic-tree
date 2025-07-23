@@ -1,4 +1,5 @@
 
+/*navigation bar*/
 body {
             margin: 0;
             padding: 0;
@@ -43,20 +44,18 @@ body {
             margin-top: 10px;
         }
     
-        td{
-            color: #000;
-            margin:0;
-            text-align: center;
-        }
-        .form{
-            margin: 80px auto;
-            width: 80%;
-            padding: 30px;
-            border-radius: 10px;
-            background-color: rgb(255, 207, 207);
+
+.navi-line {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family:'Material Symbols Outined';
+    
+}
 
             
-        }
+        
         .submit{
             border-radius: 10px;
             border: none;
@@ -94,31 +93,77 @@ body {
             margin-left: 9%;
             }
 
-         
+td{
+    color: #000;
+    margin:0;
+    text-align: center;
+}
+.form{
+    margin: 80px auto;
+    width: 80%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 207, 207);
 
-        
-        
+    
+}
+.submit{
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background-color: #0095ff;
+    color: white;
+    font-weight: bold;
+    margin-left:85%;
+    
+    
+}
+.form input{
+    border-radius: 5px;
+    border:none;
+    margin-left: 30px; 
+    text-align: start;
+    width:60%; 
+    height:20px;
+    
+}
 
-        .form textarea{
-            border-radius: 10px;
-            border:none;
-            margin-top:10px;
-            width:89%; 
-            height:50px;
-            
-            justify-content: center;
+    
+    
 
-            
-        }
+.form input#gender {
+    text-align: left; 
+    width: 30px;
+    justify-items: center;
+    margin-left: 30%;
+    }
 
-        .why{
-            margin-bottom: 3px; 
-            
-           
-            
-          }
 
-       .form label{
-            width:200px;
-            display: inline-block;
-        }
+
+
+
+.form textarea{
+    border-radius: 10px;
+    border:none;
+    margin-top:10px;
+    width:89%; 
+    height:50px;
+    
+    justify-content: center;
+
+    
+}
+
+.why{
+    margin-bottom: 3px; 
+    
+    
+    
+    }
+
+.form label{
+    width:200px;
+    display: inline-block;
+}
