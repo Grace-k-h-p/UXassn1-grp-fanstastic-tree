@@ -12,21 +12,35 @@ body {
             width: 100%;
         }
         .navi-line {
-            margin: 0 15px;
+            
             text-decoration: none;
             color: black;
             font-size: 25px;
-            font-family:'Material Symbols Outined';
-           
+            font-family:'Material Symbols Outined'; 
+            padding-left: 20px; 
+        }
+
+        table{
+            width: 1250px;
+            height: 100px;
+            margin-right:100px;
+            background-color: #bcd8ec;
+            border-collapse: collapse;
         }
         
         a.navi-line:hover {
             color: #0095ff;   
         }
+        #logo {
+            width: 50%;
+            height: 40%;
+            justify-content: left;  
+        }
         .logo {
-            width: 20%;
-            height: 10%;
-            text-align:left;
+            width: 200px;
+            
+            margin-left: 20px;
+            margin-top: 10px;
         }
     
         td{
@@ -75,13 +89,14 @@ body {
             justify-items: center;
             margin-left: 30%;
             }
-
-         .form input#sch {
+            .form #sch {
             text-align: left; 
             width: 30px;
             justify-items: center;
             margin-left: 30%;
             }
+
+         
 
         
         
