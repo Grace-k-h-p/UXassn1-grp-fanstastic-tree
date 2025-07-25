@@ -1,0 +1,163 @@
+/* Contact Us page CSS */
+/* --- Contact Form Section --- */
+.contact-container {
+    background-color: #f9f9f9;
+    margin: 50px auto;
+    width: 70%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-container h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.contact-form label {
+    width: 62%;          /* Match input width */
+    margin-top: 10px;    /* Optional: adds space */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #555;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 30%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #666;
+}
+
+/* Apply placeholder style to both input and textarea */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; /* make it consistent size */
+    color: #666;
+}
+
+#contact-submit {
+    background-color: #0077cc;
+}
+
+
+
+
+
+
+
+/* Awards and history page CSS */
+
+/* Our achievements section */
+.achievements-section {
+  margin-bottom: 48px;          
+  padding: 24px;                
+  background-color: #ffffff;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 500px;
+  
+}
+
+.achievements-title {
+    margin: auto;
+    text-align: center;
+}
+
+.achiv-box {
+    display: flex;
+}
+
+.achievement-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* animates card when hover over, "ease" means animation starts slow and speds up */
+    background: #fdfdfd;
+    padding: 30px;      
+
+    border: none;
+    border-radius: 12px;
+
+    margin-top: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    
+    min-height: 325px;
+    text-align: center;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075); /* makes card stands out abit from the bg */
+}
+
+
+.achievement-card:hover {
+    transform: translateY(-5px); /* lifts the card upwards by 5px when hover over */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* gives a shadow effect when hover over and lifted */
+}
+.card-body {
+    align-content: center;
+    
+}
+
+.achievement-card .card-title {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.achievement-card .card-text {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.badge {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    padding-top: 8px;
+}
+
+.emoji {
+    font-size: 50px;
+}
+
+
+
+/* History section */
+.history-section {
+  padding: 24px;                          
+  background-color: #ffffff;               
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+  border-radius: 12px;       
+  width: 90%;
+  margin: auto;
+}
