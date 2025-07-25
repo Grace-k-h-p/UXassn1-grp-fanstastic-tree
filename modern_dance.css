@@ -269,3 +269,15 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+/* === Upcoming Events === */
+.upcmg {
+    margin: 80px auto;
+    width: 80%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 207, 207);
+    font-size: 20px;
+
+    
+}
