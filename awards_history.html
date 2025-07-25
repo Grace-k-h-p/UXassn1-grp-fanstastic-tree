@@ -1,40 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="modern_dance.css">
-
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Awards and History</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="contact_hist.css">
     </head>
 
     <body>
-        <div class="navigation">
-        <table  border="0" >
-            <tbody>
-            <tr>
-                <td rowspan="2" class="logo">
-                    <img src="UX assn2 logo.png" alt="Logo" style="width: 100%; height: 100%;" id="logo">
-                </td>
-                <td>
-                    <h1 >Modern Dance</h1>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                <a href="home.html" class="navi-line">Home</a>
-                <a href="schedule.html" class="navi-line">schedule</a>
-                <a href="awards_history.html" class="navi-line" > Award  </a>
-                <a href="upcmg.html" class="navi-line" >Up Coming Events </a> 
-                <a href="Sign_up_page.html" class="navi-line"> Sign up</a>
-                <a href="contactUs_page.html" class="navi-line" > Contact us </a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    </body>
 
+    <header class="bg-white shadow-sm">
+        <nav class="container d-flex flex-wrap align-items-center justify-content-between py-3">
+            <img src="logo.png" alt="Modern Dance Logo" class="logo" height="60">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-dark" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="schedule.html">Schedule</a></li>
+                <li class="nav-item"><a class="nav-link text-dark active" href="#">Awards and History</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="Sign_up_page.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero text-center py-5 bg-light">
+        <div class="container">
+            <h1 class="page-title"><b>Awards & History</b></h1>
+            <p class="lead">Celebrating our journey and achievements through the years</p>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="row g-5">
+            <!-- Awards Section -->
+            <div class="achievements-section">
+                <h2 class="achievements-title"><b>🌟 Our Achievements</b></h2>
+                <div class="achiv-box">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="achievement-card">
+                            <div class="card-body">
+                                <div class="emoji">🏆</div>
+                                <h4 class="card-title" style="color: blue;"><b>2025</b></h4>
+                                <p class="card-text">1st Place<br>National Dance Competition</p>
+                                <span class="badge" style="background-color: blue;">Champion</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="achievement-card">
+                            <div class="card-body">
+                            <div class="emoji">🥈</div>
+                            <h4 class="card-title" style="color: red;"><b>2024</b></h4>
+                            <p class="card-text">2nd Place<br>Inter-College Dance Off</p>
+                            <span class="badge" style="background-color: red;">Runner-Up</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="achievement-card">
+                            <div class="card-body">
+                            <div class="emoji">🏅</div>
+                            <h4 class="card-title" style="color: rgb(196, 196, 5);"><b>2023</b></h4>
+                            <p class="card-text">Most Creative<br>Choreography Award</p>
+                            <span class="badge" style="background-color: rgb(196, 196, 5);">Creativity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="achievement-card">
+                            <div class="card-body">
+                            <div class="emoji">✨</div>
+                            <h4 class="card-title" style="color: green;"><b>2022</b></h4>
+                            <p class="card-text">Best Newcomer<br>CCA Excellence Awards</p>
+                            <span class="badge" style="background-color: green;">Rising Star</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- History Section -->
+            <div class="history-section">
+                <h2 class="history-title"><b>CCA History</b></h2><br>
+                <p>
+                    The Modern Dance Co-Curricular Activity (CCA) was established in 2021 with the aim of providing students a creative platform to express themselves through contemporary and urban dance styles. What began with a small group of passionate dancers has grown into a vibrant and dynamic community.
+                    <br><br>
+                    Over the years, our team has participated in numerous school events, external competitions, and workshops, consistently impressing audiences with our energy, teamwork, and originality. Highlights include our performances in the annual Arts Showcase and achieving podium finishes in inter-college dance battles.
+                    <br><br>
+                    More than just dance, our CCA focuses on building confidence, discipline, and camaraderie among members. As we continue to evolve, we remain committed to nurturing talent, embracing innovation, and sharing the joy of dance with the wider school community.
+                </p>
+            </div>
+        </div>
+    </section>
+
+        <!-- Contact Us Section -->
+    <section class="contact-section bg-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-4"><b>Get in Touch</b></h2>
+            <p class="mb-4">Have questions or want to join us? We’d love to hear from you!</p>
+            <a href="contactUs_page.html" class="btn btn-primary btn-lg">Contact Us</a>
+        </div>
+    </section>
+
+
+    <footer class="text-center py-3 bg-light">
+        <p>&copy; 2025 Modern Dance CCA</p>
+    </footer>
+
+    </body>
 </html>
