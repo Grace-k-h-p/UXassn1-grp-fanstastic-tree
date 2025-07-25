@@ -1,0 +1,68 @@
+/* --- Contact Form Section --- */
+.contact-container {
+    background-color: #f9f9f9;
+    margin: 50px auto;
+    width: 70%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-container h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.contact-form label {
+    width: 62%;          /* Match input width */
+    margin-top: 10px;    /* Optional: adds space */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #555;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 30%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #666;
+}
+
+/* Apply placeholder style to both input and textarea */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; /* make it consistent size */
+    color: #666;
+}
+
+#contact-submit {
+    background-color: blueviolet;
+}
