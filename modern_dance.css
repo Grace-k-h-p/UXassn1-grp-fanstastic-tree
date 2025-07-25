@@ -121,7 +121,8 @@ nav ul li a:hover {
     width: 80%;
     padding: 30px;
     border-radius: 10px;
-    background-color: rgb(255, 207, 207);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     
 }
@@ -135,6 +136,7 @@ nav ul li a:hover {
     color: white;
     font-weight: bold;
     margin-left:85%;
+  
     
     
 }
@@ -164,7 +166,6 @@ nav ul li a:hover {
 
 .form textarea{
     border-radius: 10px;
-    border:none;
     margin-top:10px;
     width:89%; 
     height:50px;
@@ -185,6 +186,7 @@ nav ul li a:hover {
     width:200px;
     display: inline-block;
 }
+
 
 
 
@@ -276,8 +278,9 @@ footer {
     width: 80%;
     padding: 30px;
     border-radius: 10px;
-    background-color: rgb(255, 207, 207);
+    background-color: white;
     font-size: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     
 }
