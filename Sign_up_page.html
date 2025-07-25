@@ -4,6 +4,12 @@
 <link rel="stylesheet" href="modern_dance.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
 <style>
   form {
     width: 90%;
@@ -26,7 +32,7 @@
 <body>
     <header class="bg-white shadow-sm">
     <nav class="container d-flex flex-wrap align-items-center justify-content-between py-3">
-      <img src="UX assn2 logo.png" alt="Modern Dance Logo" class="logo" height="60">
+      <img src="logo.png" alt="Modern Dance Logo" class="logo" height="60">
       <ul class="nav">
         <li class="nav-item"><a class="nav-link text-dark" href="home.html">Home</a></li>
         <li class="nav-item"><a class="nav-link text-dark" href="schedule.html">Schedule</a></li>
@@ -73,6 +79,7 @@
             <textarea id="why" name="why" rows="3" cols="50" placeholder="I am interested in joining because..."></textarea><br><br>
 
             <button type="submit" class="submit" onclick="audio.play()">Submit</button>
+            <audio id="audio" src="Children Yay!   Sound Effect.mp3"></audio>
         </form>
     </div>
      
