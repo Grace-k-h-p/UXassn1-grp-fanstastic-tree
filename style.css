@@ -1,4 +1,3 @@
-/* === Reset & Base Styles === */
 * {
   margin: 0;
   padding: 0;
@@ -7,42 +6,36 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background-color: #9cbcd3;
+  background: #9cbcd3;
   color: #333;
-  margin: 0;
+  line-height: 1.6;
   padding-bottom: 60px;
 }
 
-/* === Shared Box Styles (Cards/Sections) === */
-section,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-.info-grid > div,
-footer,
-form,
-.card,
-.box {
-  background-color: #f9f9f9;
+/* layout boxes */
+section, .info-grid > div, footer, form {
+  background: #f9f9f9;
   padding: 20px;
   margin: 20px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   max-width: 1100px;
 }
 
-/* === Header & Navigation === */
+/* header + navigation bar */
 header {
-  background: #ffffff;
+  background: white;
   padding: 20px 40px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-nav img.logo {
+nav img {
   height: 60px;
 }
 
@@ -52,27 +45,54 @@ nav ul {
   gap: 25px;
 }
 
-nav ul li a {
+nav a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
 }
 
-nav ul li a:hover {
+nav a:hover {
   color: #0077cc;
 }
 
-/* === Hero Section === */
+/* superhero section(hero) */
 .hero {
   background: #ddd;
   text-align: center;
   padding: 60px 20px;
 }
 
+.hero-intro {
+  position: relative;
+  overflow: hidden;
+  height: 40vh;
+  background: none;
+  color: white;
+}
+
+.hero-intro .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-intro .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+  z-index: -1;
+}
+
 .hero h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  letter-spacing: 1px;
 }
 
 .hero p {
@@ -84,8 +104,8 @@ nav ul li a:hover {
   background: #0077cc;
   color: white;
   padding: 12px 25px;
-  text-decoration: none;
   border-radius: 5px;
+  text-decoration: none;
   font-weight: bold;
 }
 
@@ -93,63 +113,50 @@ nav ul li a:hover {
   background: #005fa3;
 }
 
-/* === Info Grid (About & Member Spotlight) === */
-.info-grid {
+/* about section */
+.about {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 20px;
   padding: 40px 60px;
 }
 
-.info-grid > div {
+.about > div {
   flex: 1 1 45%;
 }
 
-.info-grid h2 {
+.about h2 {
   margin-bottom: 15px;
-  font-size: 22px;
 }
 
-.info-grid .col-md-6 {
-  margin-bottom: 30px;
-}
-
-/* === Member Spotlight === */
+/* quote */
 blockquote {
   font-style: italic;
-  padding: 10px 15px;
   border-left: 4px solid #0077cc;
   background: #eef5fb;
+  padding: 10px 15px;
   margin-bottom: 15px;
 }
 
 .spotlight-img {
   max-width: 100%;
-  height: auto;
   border-radius: 10px;
-  display: block;
   margin-top: 10px;
 }
 
-/* === Schedule Table === */
-.schedule {
-  padding: 40px 60px;
-}
-
+/* schedule */
 .schedule h1 {
-  margin-bottom: 30px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #f9f9f9;
 }
 
 thead {
-  background-color: #333;
+  background: #333;
   color: white;
 }
 
@@ -160,7 +167,7 @@ th, td {
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background: #f2f2f2;
 }
 
 .note {
@@ -169,7 +176,7 @@ tbody tr:nth-child(even) {
   text-align: center;
 }
 
-/* === Footer === */
+/* footer */
 footer {
   text-align: center;
   padding: 20px;
