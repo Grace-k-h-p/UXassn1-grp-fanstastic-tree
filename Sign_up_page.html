@@ -5,10 +5,12 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script>
-      function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
+      function playAudio() {
+        var a = document.getElementById("audio");
+        a.play();
+       
       }
+     
     </script>
 <style>
   form {
@@ -48,7 +50,7 @@
         
         <form action="submit_form.html" method="post">
             <label for="name">First Name:</label>
-            <input type="text" id="Fname" name="name" required placeholder="Shernell "><br><br>
+            <input type="text" id="Fname" name="name" required placeholder="Shernell " onclick="playAudio()"><br><br>
 
             <label for="name">Last Name:</label>
             <input type="text" id="name" name="name" required placeholder="Ho "><br><br>
@@ -78,9 +80,10 @@
             <p for="why" class="why" >Why are you interested in joining us</p><br>
             <textarea id="why" name="why" rows="3" cols="50" placeholder="I am interested in joining because..."></textarea><br><br>
 
-            <button type="submit" class="submit" onclick="audio.play()">Submit</button>
-            <audio id="audio" src="Children Yay!   Sound Effect.mp3"></audio>
+            <button  type="submit" class="submit">Submit</button>
+            
         </form>
+        <audio id="audio" src="Children Yay!   Sound Effect.mp3" ></audio>
     </div>
      
 

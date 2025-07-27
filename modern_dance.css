@@ -97,7 +97,8 @@ nav ul li a:hover {
             text-align: start;
             width:60%; 
             height:20px;
-            padding: 5px;           
+            padding: 5px;  
+            border:10px;         
         }
        
             
