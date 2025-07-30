@@ -5,8 +5,23 @@
   <title>Page Title | Modern Dance</title>
 <link rel="stylesheet" href="modern_dance.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script>
+  function check(admin){
+    console.log(1)
+  
+      var adminno= document.getElementById('admin').value
+     console.log(2)
+    if (adminno.length !== 7){ 
+    alert("Invalid admin number");
+    document.getElementById("admin").value = "";
+    console.log(4);
+  } else {
+    console.log("Valid admin number");
+  }
+}
+</script>
 
-<link rel="stylesheet" href="NavnFooter.css">
+</script>
 <style>
   form {
     width: 90%;
@@ -73,10 +88,13 @@
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone" required placeholder="12345678" ><br><br>
 
+            <label for="admin">Admin no:</label>
+            <input type="text" id="admin" name="adminno" required placeholder="251095X" ><br><br>
+
             <label for="gender">Gender:</label><br>
-            <input type="radio" id="radioo" name="gender" value="female" class="gender">
+            <input type="radio" id="radioo" name="gender" value="female" class="gender" oninput="check(admin)">
             <label for="female" class="gender">Female</label><br>
-            <input type="radio" id="radioo" name="gender" value="male" class="gender">
+            <input type="radio" id="radioo" name="gender" value="male" class="gender" oninput="check(admin)">
             <label for="male" class="gender">Male</label><br><br>
 
              <label for="sch">School of:</label>
