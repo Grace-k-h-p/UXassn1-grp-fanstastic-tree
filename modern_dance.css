@@ -1,81 +1,4 @@
 
-/*navigation bar*/
-body {
-    margin: 0;
-    padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color:  #9cbcd3;
-    font-size: 20px;
-     }
-header {
-  background: #ffffff;
-  padding: 20px 40px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.container d {
-background-color: white;
-}
-
-nav img.logo {
-  height: 60px;
-  
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-nav ul li a:hover {
-  color: #0077cc;
-}
-
-/* === Hero Section === */
-.hero {
-  background: #ddd;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.hero h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.btn {
-  background: #0077cc;
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background: #005fa3;
-}
-
-
             
     /* === SIGN UP FORM === */ 
         .submit{
@@ -105,7 +28,7 @@ nav ul li a:hover {
             
             
         
-        .form input#gender {
+        .form input#radioo {
             text-align: left; 
             width: 30px;
             justify-items: center;
@@ -233,11 +156,7 @@ tbody tr:nth-child(even) {
   text-align: center;
 }
 
-/* === Footer === */
-footer {
-  text-align: center;
-  padding: 20px;
-}
+
 
 /* === Upcoming Events === */
 .upcmg {
