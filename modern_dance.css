@@ -1,81 +1,87 @@
 
             
     /* === SIGN UP FORM === */ 
-        .submit{
-            border-radius: 10px;
-            border: none;
-            cursor: pointer;
-            width: 100px;
-            height: 30px;
-            background-color: #0095ff;
-            color: white;
-            font-weight: bold;
-            margin-left:85%;
-            
-            
-        }
-        .form input{
-            border-radius: 5px;
-            margin-left: 30px; 
-            text-align: start;
-            width:60%; 
-            height:20px;
-            padding: 5px;  
-            border: none; 
-            
-        }
-       
-            
-            
-        
-        .form input#radioo {
-            text-align: left; 
-            width: 30px;
-            justify-items: center;
-            margin-left: 30%;
-            }
-            #sch {
-            justify-items: center;
-            margin-left: 9%;
-            }
+.submit{
+   border-radius: 10px;
+   border: none;
+   cursor: pointer;
+   width: 80px;
+   height: 30px;
+   background-color: #0095ff;
+   color: white;
+   font-weight: bold;
+   margin-left:85%;
+  }
+.form input{
+   
+   margin-left: 30px; 
+   width:60%; 
+   height:10%;
+   padding:20px;  
+             
+  }
+      
+.form input#radioo {          
+   width: 30px;
+   justify-items: center;
+   margin-left: 30%;
+   padding-left:0px;
+  }
+
+ #sch {
+   justify-items: center;
+   margin-left: 18%;
+  }
 
 
-.form{
-    margin: 80px auto;
-    width: 80%;
-    padding: 30px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-
-    
-}    
+ .form{
+   margin: 80px auto;
+   width: 80%;
+   padding: 30px;
+   border-radius: 10px;
+   background-color: white;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }    
   
 
 
 .form textarea{
-    border-radius: 5px;
-    margin-top:10px;
-    width:89%; 
-    height:50px;
-    
-    justify-content: center;
-
-    
-}
+   border-radius: 5px;
+   margin-top:10px;
+   width:89%; 
+   height:50px;
+   justify-content: center;    
+  }
 
 .why{
-    margin-bottom: 3px; 
-    
-    
-    
-    }
+   margin-bottom: 3px; 
+  }
 
 .form label{
-    width:200px;
-    display: inline-block;
+   display: inline-block;
+   justify-content: center;
+   
 }
+.info{
+  padding-left:140px;
+}
+input.text{
+  margin-left:50px;
+  text-align: left;
+}
+.email{
+  padding-right:56px;
+}
+.phone{
+  padding-right:50px;
+}
+.admin{
+  padding-right:25.5px;
+}
+.name{
+  padding-right:20px;
+}
+
 
 
 
@@ -160,13 +166,14 @@ tbody tr:nth-child(even) {
 
 /* === Upcoming Events === */
 .upcmg {
-    margin: 80px auto;
+    margin: 80px;
     width: 80%;
     padding: 30px;
     border-radius: 10px;
     background-color: white;
     font-size: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom:50px
 
     
 }
