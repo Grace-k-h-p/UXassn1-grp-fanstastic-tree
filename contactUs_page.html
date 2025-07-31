@@ -1,7 +1,104 @@
 <!DOCTYPE html>
 <head>
-    <!-- email validation prompt -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modern Dance | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="NavnFooter.css">
+    <link rel="stylesheet" href="contact_hist.css">
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header class="bg-white shadow-sm">
+        <nav class="container d-flex flex-wrap align-items-center justify-content-between py-3">
+        <img src="logo.png" alt="Modern Dance Logo" class="logo" height="60">
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link text-dark" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="schedule.html">Schedule</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="awards_history.html">Awards and History</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="Sign_up_page.html">Sign Up</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <div class="container my-5">
+        <div class="row"> <!-- class "row" - making the contents into a single row -->
+            <!-- Contact Us info -->
+            <div class="contact-info col-md-6 mb-4">
+                <h1 id="contact-title">Contact Us</h1>
+                <p>
+                    Any quiries about our modern dance or want to know more about our cca? Feel free to contact us by filling up the form, email or call us!<br><br>
+                    <strong>Email:</strong> nypmdcca@moderndance.sg <br>
+                    <strong>Phone:</strong> +65 6543 7890 
+                </p>
+
+                <br><br>
+
+                <div class="faq-container">
+                    <h2>FAQs</h2>
+                    <div class="faq-item">
+                        <button class="faq-question">What is the commitment?</button>
+
+                        <div class="faq-answer">
+                            <p>Every Tuesday and Thursday. Refer to <a href="schedule.html" style="color: blue;">schedule</a> for the days and timing.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Is there any upcoming events?</button>
+                        <div class="faq-answer">
+                        <p>Any upcoming events will be updated in the <a href="upcmg.html" style="color: blue;">upcoming events</a> page. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-5">
+                <div class="form-box">
+                    <h3>Get in Touch</h3>
+                    <p>Fill up the form and we will contact you back</p>
+                    
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <div class="row g-2">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="fname" placeholder="First name" required>
+                                </div>
+
+                                <div class="col">
+                                    <input type="text" class="form-control" id="lname" placeholder="Last name" required>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Your email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="+65 Phone number" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" rows="4" placeholder="How can we help?" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        <p class="text-muted mt-2 small text-center">
+                            By contacting us, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
+            // email validation prompt
         window.onload = function () {
             const emailField = document.getElementById('email');
 
@@ -20,45 +117,20 @@
                 form.reset(); // optional: clear the form after submission
             });
         };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const questions = document.querySelectorAll('.faq-question');
+
+            questions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+            });
+        });
+
     </script>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Modern Dance | Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact_hist.css">
-
-    <title>Contact Us</title>
-
-</head>
-
-<body>
-    <header class="bg-white shadow-sm">
-        <nav class="container d-flex flex-wrap align-items-center justify-content-between py-3">
-        <img src="logo.png" alt="Modern Dance Logo" class="logo" height="60">
-        <ul class="nav">
-            <li class="nav-item"><a class="nav-link text-dark" href="home.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link text-dark" href="schedule.html">Schedule</a></li>
-            <li class="nav-item"><a class="nav-link text-dark" href="awards_history.html">Awards and History</a></li>
-            <li class="nav-item"><a class="nav-link text-dark" href="Sign_up_page.html">Sign Up</a></li>
-        </ul>
-        </nav>
-    </header>
-
-    <div class="contact-container">
-        <h2>Contact Us</h2>
-        <form class="contact-form">
-            <label for="name">Name: </label>
-            <input type="text" id="name" placeholder="Enter name" required>
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" placeholder="Enter email" required>
-            <label for="message">Message: </label>
-            <textarea name="message" id="message" placeholder="Enter message" required></textarea>
-            <button type="submit" id="contact-submit">Submit</button>
-        </form>
-    </div>
-
     
 
 </body>
