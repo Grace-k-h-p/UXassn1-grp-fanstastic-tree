@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #9cbcd3; /* soft blue bg */
+  background: #9cbcd3;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -22,36 +22,45 @@ form {
   max-width: 1100px;
 }
 
-/* navbar */
-/* custom, not bootstrap default */
-.dance-navbar.menu-toggle-icon {
+/* === Navbar Customization === */
+/* This makes the hamburger menu icon solid white and more visible */
+.navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* make nav links stand out moree */
-.dance-navbar.nav-link {
+/* Make nav links stand out more */
+.navbar-dark .navbar-nav .nav-link {
   position: relative;
-  color: rgba(255, 255, 255, 0.9); /*better contrast*/
-  font-weight: 600; /*bolder text*/
+  /* Needed for the underline pseudo-element */
+  color: rgba(255, 255, 255, 0.9);
+  /* Brighter white for better contrast */
+  font-weight: 600;
+  /* Bolder text (semi-bold) */
   transition: color 0.2s ease-in-out, font-weight 0.2s ease-in-out;
   padding-bottom: 0.3rem;
-  /* added a little space for the underline */
+  /* Add a little space for the underline */
 }
 
-.dance-navbar.nav-link:hover,
-.dance-navbar.nav-link:focus {
-  color: #fff; /* purely white on hover/focus */
-  font-weight: 700; /* text bolded on hover/focus */
-}
-
-.dance-navbar.nav-link.active {
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
   color: #fff;
-  font-weight: 700;  /* xtra bold for the active link */
-  background-color: rgba(0, 0, 0, 0.1); /*subtle highlight */
-  border-radius: 0.25rem; /* rounded corners */
+  /* Pure white on hover/focus */
+  font-weight: 700;
+  /* Make text bold on hover/focus */
 }
 
-.dance-navbar.nav-link::after {
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #fff;
+  font-weight: 700;
+  /* Extra bold for the active link */
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Subtle highlight for active page */
+  border-radius: 0.25rem;
+  /* Rounded corners for the highlight */
+}
+
+/* Animated underline for nav items */
+.navbar-dark .navbar-nav .nav-link::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -62,7 +71,8 @@ form {
   transition: width 0.3s ease-in-out;
 }
 
-.dance-navbar.nav-link:hover::after {
+/* Only apply underline on hover, not on active */
+.navbar-dark .navbar-nav .nav-link:hover::after {
   width: 100%;
 }
 
@@ -88,7 +98,7 @@ td {
   text-align: center;
   border: 1px solid #ddd;
 }
-/* light grey rows) */
+
 tbody tr:nth-child(even) {
   background: #f2f2f2;
 }
@@ -99,7 +109,7 @@ tbody tr:nth-child(even) {
   text-align: center;
 }
 
-/* footer stylish styles */
+/* === New Footer Styles === */
 .site-footer {
   background-color: #26272b;
   padding: 45px 0 20px;
@@ -144,5 +154,5 @@ tbody tr:nth-child(even) {
 }
 
 .site-footer .text-muted {
-  color: #737373;
+  color: #737373 !important;
 }
