@@ -4,12 +4,14 @@ body {
 }
 
 /* --- Contact Form Section --- */
-.container {
+.container-contact {
     align-items: start;
     justify-content: center;
     background-color: #eaeff4;
     padding: 50px;
+    margin: 40px;
     border-radius: 10px;
+    
 }
 
 #contact-title {
@@ -107,7 +109,26 @@ body {
 /* Awards and history page CSS */
 
 /* layout boxes */
-section, .info-grid > div, form {
+/* section, .info-grid > div, form {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  width: 90%;
+} */
+
+.awardsHist-heading-bottom {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  width: 90%;
+}
+
+.container-awardsHist {
   background: #f9f9f9;
   padding: 20px;
   margin: 20px auto;
