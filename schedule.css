@@ -1,0 +1,113 @@
+/* Custom styles for the schedule page */
+.nav-tabs {
+  border-bottom: none; /* Remove the default bottom border from the tab container */
+}
+
+.nav-tabs .nav-link {
+  color: #495057;
+  border: none; /* Remove default borders from all tab links */
+  border-radius: 0.25rem 0.25rem 0 0; /* Keep top corners rounded for a classic tab feel */
+}
+
+.nav-tabs .nav-link:hover:not(.active) {
+  background-color: #eef3f7; /* Add a light blue hover for non-active tabs */
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff; /* Change text to white for better contrast */
+  background-color: #6d93b0; /* Apply the theme-consistent blue background */
+  border: none; /* Ensure no borders are on the active tab */
+  font-weight: bold;
+}
+
+.tab-content {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+/* === Page Hero Header === */
+.page-hero {
+  position: relative;
+  min-height: 40vh; /* A good height for a sub-page hero banner */
+  background: url('images/scheduleBg.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+.page-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 40, 40, 0.6); /* Gray overlay for text contrast */
+  z-index: 1; /* Explicitly set the overlay's stacking order */
+}
+
+/* Ensure content is above the overlay */
+.page-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* === Past Schedule Card View === */
+.video-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid #dee2e6;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.play-icon-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-card:hover .play-icon-overlay {
+  opacity: 1;
+}
+
+/* === Sleek Blue Table Theme for Upcoming Schedule === */
+#upcoming .table thead {
+  background-color: #6d93b0; /* A darker, theme-consistent blue */
+  color: white;
+}
+
+#upcoming .table th,
+#upcoming .table td {
+  border: none; /* Removes borders from global style.css */
+  border-bottom: 1px solid #e9ecef; /* A light horizontal line for separation */
+}
+
+#upcoming .table th {
+  font-weight: 600;
+  border-bottom-width: 2px; /* A thicker line below the header */
+}
+
+/* Remove the bottom border for the very last row for a clean finish */
+#upcoming .table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Custom hover effect with a light blue background */
+#upcoming .table-hover > tbody > tr:hover {
+  background-color: #eef3f7; /* A very light, theme-consistent blue hover */
+}
+
+/* Override the global zebra-striping from style.css for a cleaner look */
+#upcoming .table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
