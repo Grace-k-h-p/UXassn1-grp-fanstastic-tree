@@ -6,108 +6,187 @@
         <title>Awards and History</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="NavnFooter.css">
         <link rel="stylesheet" href="contact_hist.css">
     </head>
 
     <body>
 
-    <header class="bg-white shadow-sm">
-        <nav class="container d-flex flex-wrap align-items-center justify-content-between py-3">
-            <img src="logo.png" alt="Modern Dance Logo" class="logo" height="60">
-            <ul class="nav">
-                <li class="nav-item"><a class="nav-link text-dark" href="home.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="schedule.html">Schedule</a></li>
-                <li class="nav-item"><a class="nav-link text-dark active" href="#">Awards and History</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="Sign_up_page.html">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #9cbcd3;">
+            <div class="container-fluid">
 
-    <section class="hero text-center py-5 bg-light">
-        <div class="container">
-            <h1 class="page-title"><b>Awards & History</b></h1>
-            <p class="lead">Celebrating our journey and achievements through the years</p>
-        </div>
-    </section>
+                <!-- logo that goes back to home -->
+                <a class="navbar-brand" href="home.html">
+                <img src="logo.png" alt="Modern Dance Logo" height="55">
+                </a>
 
-    <section class="container py-5">
-        <div class="row g-5">
-            <!-- Awards Section -->
-            <div class="achievements-section">
-                <h2 class="achievements-title"><b>🌟 Our Achievements</b></h2>
-                <div class="achiv-box">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="achievement-card">
-                            <div class="card-body">
-                                <div class="emoji">🏆</div>
-                                <h4 class="card-title" style="color: blue;"><b>2025</b></h4>
-                                <p class="card-text">1st Place<br>National Dance Competition</p>
-                                <span class="badge" style="background-color: blue;">Champion</span>
+                <!-- burger menu for small screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- nav links -->
+                <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ps-3 ps-lg-0">
+                    <li class="nav-item"><a class="nav-link px-3" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="awards_history.html">Awards & History</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="upcmg.html">Upcoming Events</a></li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        </header>
+
+        <section class="hero text-center py-5 bg-light">
+            <div class="container">
+                <h1 class="page-title"><b>Awards & History</b></h1>
+                <p class="lead">Celebrating our journey and achievements through the years</p>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <div class="row g-5">
+                <!-- Awards Section -->
+                <div class="achievements-section">
+                    <h2 class="achievements-title"><b>🌟 Our Achievements</b></h2>
+                    <div class="achiv-box">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="achievement-card">
+                                <div class="card-body">
+                                    <div class="emoji">🏆</div>
+                                    <h4 class="card-title" style="color: blue;"><b>2025</b></h4>
+                                    <p class="card-text">1st Place<br>National Dance Competition</p>
+                                    <span class="badge" style="background-color: blue;">Champion</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="achievement-card">
-                            <div class="card-body">
-                            <div class="emoji">🥈</div>
-                            <h4 class="card-title" style="color: red;"><b>2024</b></h4>
-                            <p class="card-text">2nd Place<br>Inter-College Dance Off</p>
-                            <span class="badge" style="background-color: red;">Runner-Up</span>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="achievement-card">
+                                <div class="card-body">
+                                <div class="emoji">🥈</div>
+                                <h4 class="card-title" style="color: red;"><b>2024</b></h4>
+                                <p class="card-text">2nd Place<br>Inter-College Dance Off</p>
+                                <span class="badge" style="background-color: red;">Runner-Up</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="achievement-card">
-                            <div class="card-body">
-                            <div class="emoji">🏅</div>
-                            <h4 class="card-title" style="color: rgb(196, 196, 5);"><b>2023</b></h4>
-                            <p class="card-text">Most Creative<br>Choreography Award</p>
-                            <span class="badge" style="background-color: rgb(196, 196, 5);">Creativity</span>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="achievement-card">
+                                <div class="card-body">
+                                <div class="emoji">🏅</div>
+                                <h4 class="card-title" style="color: rgb(196, 196, 5);"><b>2023</b></h4>
+                                <p class="card-text">Most Creative<br>Choreography Award</p>
+                                <span class="badge" style="background-color: rgb(196, 196, 5);">Creativity</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-6 col-lg-3">
-                        <div class="achievement-card">
-                            <div class="card-body">
-                            <div class="emoji">✨</div>
-                            <h4 class="card-title" style="color: green;"><b>2022</b></h4>
-                            <p class="card-text">Best Newcomer<br>CCA Excellence Awards</p>
-                            <span class="badge" style="background-color: green;">Rising Star</span>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="achievement-card">
+                                <div class="card-body">
+                                <div class="emoji">✨</div>
+                                <h4 class="card-title" style="color: green;"><b>2022</b></h4>
+                                <p class="card-text">Best Newcomer<br>CCA Excellence Awards</p>
+                                <span class="badge" style="background-color: green;">Rising Star</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- History Section -->
+                <div class="history-section">
+                    <h2 class="history-title"><b>CCA History</b></h2><br>
+                    <p>
+                        The Modern Dance Co-Curricular Activity (CCA) was established in 2021 with the aim of providing students a creative platform to express themselves through contemporary and urban dance styles. What began with a small group of passionate dancers has grown into a vibrant and dynamic community.
+                        <br><br>
+                        Over the years, our team has participated in numerous school events, external competitions, and workshops, consistently impressing audiences with our energy, teamwork, and originality. Highlights include our performances in the annual Arts Showcase and achieving podium finishes in inter-college dance battles.
+                        <br><br>
+                        More than just dance, our CCA focuses on building confidence, discipline, and camaraderie among members. As we continue to evolve, we remain committed to nurturing talent, embracing innovation, and sharing the joy of dance with the wider school community.
+                    </p>
+                </div>
             </div>
+        </section>
 
-            <!-- History Section -->
-            <div class="history-section">
-                <h2 class="history-title"><b>CCA History</b></h2><br>
-                <p>
-                    The Modern Dance Co-Curricular Activity (CCA) was established in 2021 with the aim of providing students a creative platform to express themselves through contemporary and urban dance styles. What began with a small group of passionate dancers has grown into a vibrant and dynamic community.
-                    <br><br>
-                    Over the years, our team has participated in numerous school events, external competitions, and workshops, consistently impressing audiences with our energy, teamwork, and originality. Highlights include our performances in the annual Arts Showcase and achieving podium finishes in inter-college dance battles.
-                    <br><br>
-                    More than just dance, our CCA focuses on building confidence, discipline, and camaraderie among members. As we continue to evolve, we remain committed to nurturing talent, embracing innovation, and sharing the joy of dance with the wider school community.
-                </p>
+            <!-- Contact Us Section -->
+        <section class="contact-section bg-white py-5">
+            <div class="container text-center">
+                <h2 class="mb-4"><b>Get in Touch</b></h2>
+                <p class="mb-4">Have questions or want to join us? We’d love to hear from you!</p>
+                <a href="contactUs_page.html" class="btn btn-primary btn-lg">Contact Us</a>
             </div>
-        </div>
-    </section>
-
-        <!-- Contact Us Section -->
-    <section class="contact-section bg-white py-5">
-        <div class="container text-center">
-            <h2 class="mb-4"><b>Get in Touch</b></h2>
-            <p class="mb-4">Have questions or want to join us? We’d love to hear from you!</p>
-            <a href="contactUs_page.html" class="btn btn-primary btn-lg">Contact Us</a>
-        </div>
-    </section>
+        </section>
 
 
-    <footer class="text-center py-3 bg-light">
-        <p>&copy; 2025 Modern Dance CCA</p>
-    </footer>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
 
+                    <!-- quick intro -->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5>About Modern Dance</h5>
+                    <p class="text-muted small">No judgments, just vibe. We're a passionate and welcoming dance group that
+                        performs, trains and has fun together.</p>
+                    </div>
+
+                    <!-- shortcut links -->
+                    <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="awards_history.html">Awards</a></li>
+                        <li><a href="Sign_up_page.html">Sign Up</a></li>
+                    </ul>
+                    </div>
+
+                    <!-- socials and contact -->
+                    <div class="col-lg-3 col-md-3 col-6 mb-4 mb-lg-0">
+                    <h5>Connect</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="contactUs_page.html">Contact Us</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                    </div>
+
+                    <!-- email contact -->
+                    <div class="col-lg-3 col-md-12 text-md-start">
+                    <h5>Contact</h5>
+                    <p class="text-muted small mb-0">
+                    <a href="mailto:moderndancenyp@gmail.com">Email: moderndancenyp@gmail.com</a>
+                    </p>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!-- bottom copyright and links -->
+                <div class="row align-items-center">
+                    <div class="col-md-8 col-sm-6 col-12">
+                    <p class="copyright-text text-muted small mb-0">
+                        &copy; 2025 Modern Dance CCA. All Rights Reserved.
+                    </p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                    <ul class="list-inline text-sm-end text-center mb-0">
+                        <li class="list-inline-item">
+                        <a href="#" class="text-muted small">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                        <a href="#" class="text-muted small">Terms of Use</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- bootstrap JS (makes navbar work and stuff) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

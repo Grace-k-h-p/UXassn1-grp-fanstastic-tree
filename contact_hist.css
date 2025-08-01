@@ -7,6 +7,9 @@ body {
 .container {
     align-items: start;
     justify-content: center;
+    background-color: #eaeff4;
+    padding: 50px;
+    border-radius: 10px;
 }
 
 #contact-title {
@@ -26,6 +29,7 @@ body {
     border-radius: 10px;
     background-color: #fdfdfd;
     width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form input,
@@ -74,7 +78,7 @@ body {
 }
 
 .faq-item {
-  border-top: 1px solid #eee;
+  border-top: 2px solid #aeaeae;
 }
 
 .faq-question::after {
@@ -101,6 +105,16 @@ body {
 
 
 /* Awards and history page CSS */
+
+/* layout boxes */
+section, .info-grid > div, form {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  width: 90%;
+}
 
 /* Our achievements section */
 .achievements-section {
