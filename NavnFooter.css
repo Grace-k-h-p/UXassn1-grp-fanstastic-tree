@@ -22,15 +22,14 @@ form {
   max-width: 1100px;
 }
 
-/* === Navbar Customization === */
 /* This makes the hamburger menu icon solid white and more visible */
 /* Responsive navbar logo size */
-.navbar-logo {
+.logo {
   width: 50px;
   height: auto;
 }
 @media (min-width: 992px) { /* Large screens (Bootstrap lg breakpoint) */
-  .navbar-logo {
+  .logo {
     width: 85px;
   }
 }
