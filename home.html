@@ -1,81 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Modern Dance | Home</title>
   <!-- bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons for awards scroller -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- customised css-->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="NavnFooter.css">
+  <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
-<!-- navigation bar! -->
-  <header class="bg-white shadow-sm">
-    <nav class="d-flex justify-content-between align-items-center px-4 py-3">
-      <img src="logo.png" alt="Modern Dance Logo" class="logo" height="55px">
-      <div class="nav-links d-flex gap-4">
-        <a href="home.html">Home</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="awards_history.html">Awards</a>
-        <a href="Sign_up_page.html">Sign Up</a>
-        </div>   
+  <!-- Unified Responsive Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #9cbcd3;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">
+          <img src="logo.png" alt="Modern Dance Logo" height="55">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ps-3 ps-lg-0">
+            <li class="nav-item"><a class="nav-link active px-3" aria-current="page" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="schedule.html">Schedule</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="awards_history.html">Awards & History</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="upcmg.html">Upcoming Events</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <section class="hero hero-intro text-center py-5">
+  <section class="hero-intro d-flex align-items-center text-center">
     <video autoplay muted loop playsinline class="bg-video">
-      <source src="home_video.mp4" type="video/mp4">
+      <source src="images/home_video.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <div class="overlay"></div>
     <div class="container">
-      <h1 class="display-5">MODERN DANCE CCA</h1>
+      <h1 class="display-2">MODERN DANCE CCA</h1>
       <p class="lead">No judgments, just vibe</p>
       <a href="#" id="joinBtn" class="btn btn-primary">Join Us</a>
     </div>
   </section>
 
-  <section class="info-grid container py-5">
-    <div class="row g-5">
-      <div class="col-md-6">
-        <div class="p-5 bg-white shadow rounded">
-          <h2>ABOUT US</h2>
-          <p>We're a passionate and welcoming dance group that performs, trains and have fun together.</p>
-          <p>No experience is required. Bring along your energy and passion!</p>
-          <p>Join us for our weekly sessions and be part of our dance family!</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="p-4 bg-white shadow rounded">
-          <h2>MEMBER SPOTLIGHT</h2>
-          <div class="row">
-            <div class="col-3">
-              <img src="pfp.avif" alt="Image of a Profile" class="spotlight-img">
-            </div>
-            <div class="col-9">
-              <blockquote class="blockquote">
-                "The best decision I've ever made."<br><br>
-                <footer class="blockquote-footer">Alexis, 23rd GEN</footer>
-              </blockquote>
-            </div> 
+  <section id="about-us" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center">
+          <div class="mb-5">
+            <h2 class="fw-bold">GET TO KNOW US</h2>
+            <p class="lead text-muted">Discover what our dance group is all about.</p>
+          </div>
+          <div class="p-5 bg-white shadow rounded">
+            <h3>ABOUT US</h3>
+            <p>We're a passionate and welcoming dance group that performs, trains and has fun together.</p>
+            <p>No experience is required. Bring along your energy and passion!</p>
+            <p>Join us for our weekly sessions and be part of our dance family!</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="text-center py-3 bg-light">
-    <p>&copy; 2025 Modern Dance CCA</p>
+  <section id="meet-the-team" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">MEET THE TEAM</h2>
+        <p class="lead text-muted">The passionate leaders behind our group.</p>
+      </div>
+      <div class="row justify-content-center text-center">
+        <!-- Team Member 1 -->
+        <div class="col-md-4 mb-5 mb-md-0">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=500&auto=format&fit=crop" alt="Chairman" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #9cbcd3;">
+          <h5 class="mb-1">Jane Sim</h5>
+          <p class="text-muted"><strong>Chairman</strong></p>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="col-md-4 mb-5 mb-md-0">
+          <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=500&auto=format&fit=crop" alt="Secretary" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #9cbcd3;">
+          <h5 class="mb-1">John Low</h5>
+          <p class="text-muted"><strong>Secretary</strong></p>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="col-md-4">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=500&auto=format&fit=crop" alt="Designer" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #9cbcd3;">
+          <h5 class="mb-1">Emily Chan</h5>
+          <p class="text-muted"><strong>Lead Choreographer</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="highlights" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">OUR FAMILY</h2>
+        <p class="lead text-muted">Growing stronger every year. Join a vibrant community of dancers!</p>
+      </div>
+      <div class="row text-center align-items-center">
+        <!-- Alumni Counter -->
+        <div class="col-lg-4 py-3">
+          <div class="counter-item">
+            <h3 class="counter-number secondary" data-target="350">0</h3>
+            <p class="counter-label">Alumni</p>
+          </div>
+        </div>
+        <!-- Years Established Counter -->
+        <div class="col-lg-4 py-3 border-lg-start border-lg-end">
+          <div class="counter-item">
+            <h3 class="counter-number primary" data-target="5">0</h3>
+            <p class="counter-label">Years Established</p>
+          </div>
+        </div>
+        <!-- Active Members Counter -->
+        <div class="col-lg-4 py-3">
+          <div class="counter-item">
+            <h3 class="counter-number secondary" data-target="127">0</h3>
+            <p class="counter-label">Active Members</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="accolades" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">OUR ACCOLADES</h2>
+        <p class="lead text-muted">A legacy of excellence and creativity.</p>
+      </div>
+      <div class="logo-marquee">
+        <ul class="logo-list logo-marquee__track list-unstyled">
+          <!-- Original Logos -->
+          <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyE7QXUkCBGUcO6hpQThSxABCjmUDXgzqOpw&s" alt="Champion 2025"></li>
+          <li><img src="https://cdn11.bigcommerce.com/s-dl22izwaan/images/stencil/1280w/products/2728/15438/api1yeibx__67372.1614112438.jpg?c=1?odnHeight=117&odnWidth=117&odnBg=FFFFFF" alt="Runner-Up 2024"></li>
+          <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWv2gg34dl7MrSpNbgswIFE-i5vtZjXnJDTQ&s" alt="Best Choreography"></li>
+          <li><img src="https://placehold.co/150x60/f0f0f0/333?text=Rising+Star" alt="Rising Star Award"></li>
+          <li><img src="https://placehold.co/150x60/f0f0f0/333?text=Most+Creative" alt="Most Creative Award"></li>
+          <li><img src="https://placehold.co/150x60/f0f0f0/333?text=Gold+Medal" alt="Gold Medal"></li>
+          <!-- Duplicated Logos for seamless CSS-only loop -->
+          <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyE7QXUkCBGUcO6hpQThSxABCjmUDXgzqOpw&s" alt="Champion 2025" aria-hidden="true"></li>
+          <li><img src="https://cdn11.bigcommerce.com/s-dl22izwaan/images/stencil/1280w/products/2728/15438/api1yeibx__67372.1614112438.jpg?c=1?odnHeight=117&odnWidth=117&odnBg=FFFFFF" alt="Runner-Up 2024" aria-hidden="true"></li>
+          <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWv2gg34dl7MrSpNbgswIFE-i5vtZjXnJDTQ&s" alt="Best Choreography" aria-hidden="true"></li>
+          <li><img src="https://placehold.co/150x60/f0f0f0/333?text=Rising+Star" alt="Rising Star Award" aria-hidden="true"></li>
+          <li><img src="https://placehold.co/150x60/f0f0f0/333?text=Most+Creative" alt="Most Creative Award" aria-hidden="true"></li>
+          <li><img src="https://placehold.co/150x60/f0f0f0/333?text=Gold+Medal" alt="Gold Medal" aria-hidden="true"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">WHAT OUR MEMBERS SAY</h2>
+        <p class="lead text-muted">Hear directly from the heart of our dance family.</p>
+      </div>
+     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Testimonial 1 -->
+          <div class="carousel-item active">
+            <div class="testimonial-card">
+              <p class="testimonial-text">"The best decision I've ever made. The community is so supportive and I've grown so much as a dancer and a person."</p>
+              <div class="testimonial-author">
+                <img src="pfp.avif" alt="Alexis" class="testimonial-img">
+                <div>
+                  <h5 class="author-name mb-0">Alexis</h5>
+                  <small class="author-title text-muted">23rd GEN</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <p class="testimonial-text">"I was nervous about joining with no experience, but everyone was so welcoming! It's been an amazing journey of fun and friendship."</p>
+              <div class="testimonial-author">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=500" alt="Ben" class="testimonial-img">
+                <div>
+                  <h5 class="author-name mb-0">Ben</h5>
+                  <small class="author-title text-muted">24th GEN</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <h5>About Modern Dance</h5>
+          <p class="text-muted small">No judgments, just vibe. We're a passionate and welcoming dance group that
+            performs, trains and has fun together.</p>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="awards_history.html">Awards</a></li>
+            <li><a href="Sign_up_page.html">Sign Up</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-6 mb-4 mb-lg-0">
+          <h5>Connect</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="contactUs_page.html">Contact Us</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 text-md-start">
+          <h5>Contact</h5>
+          <p class="text-muted small mb-0">Email: <a href="mailto:moderndancenyp@gmail.com">moderndancenyp@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="row align-items-center">
+        <div class="col-md-8 col-sm-6 col-12">
+          <p class="copyright-text text-muted small mb-0">&copy; 2025 Modern Dance CCA. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <ul class="list-inline text-sm-end text-center mb-0">
+            <li class="list-inline-item"><a href="#" class="text-muted small">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="#" class="text-muted small">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script>
+    // "Join Us" button functionality
     document.getElementById("joinBtn").addEventListener("click", function (event) {
-      event.preventDefault();
-      alert("Redirecting you to the Sign Up page...");
       window.location.href = "Sign_up_page.html";
     });
+
+    // --- Number Counter Animation ---
+    // This code makes the "Active Members" number count up when you scroll to it.
+
+    const counterElements = document.querySelectorAll('.counter-number');
+
+    const startCounterAnimation = (element) => {
+      // Get the final number we want to count up to from the HTML (from data-target="127").
+      const targetNumber = parseInt(element.getAttribute('data-target'));
+      let currentNumber = 0;
+
+      // We'll use setInterval to run a function repeatedly every few milliseconds.
+      const counterInterval = setInterval(() => {
+        // Increase the number by 1.
+        currentNumber++;
+        // Update the text on the screen.
+        element.innerText = currentNumber;
+
+        // If we have reached the target number...
+        if (currentNumber >= targetNumber) {
+          // ...stop the repeating function.
+          clearInterval(counterInterval);
+          // And make sure the final number is exactly the target.
+          element.innerText = targetNumber;
+        }
+      }, 15); // The number of milliseconds between each increment. Lower is faster.
+    };
+
+    // The IntersectionObserver watches for when an element scrolls into view.
+    // This is more efficient than constantly checking the scroll position.
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        // entry.isIntersecting is true if the element is on screen.
+        if (entry.isIntersecting) {
+          // Start the animation.
+          startCounterAnimation(entry.target);
+          // Stop watching this element so the animation only runs once.
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 }); // threshold: 0.5 means "run when 50% of the element is visible".
+
+    // Tell the observer to start watching each of our counter elements.
+    counterElements.forEach(counter => {
+      observer.observe(counter);
+    });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
-                                                    
