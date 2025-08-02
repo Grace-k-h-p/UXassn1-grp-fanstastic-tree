@@ -169,6 +169,12 @@
   }
 }
 
+/* === Shoutout Section === */
+.loudspeaker-img {
+    max-height: 340px;
+    object-fit: contain;
+}
+
 .timeline {
   gap: 2rem;
   flex-wrap: wrap;
