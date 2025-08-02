@@ -46,7 +46,6 @@
 
   <section class="py-5 bg-white">
     <div class="container">
-      <!-- Tab navigation -->
       <ul class="nav nav-tabs" id="scheduleTabs" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="upcoming-tab" data-bs-toggle="tab" data-bs-target="#upcoming"
@@ -58,9 +57,8 @@
         </li>
       </ul>
 
-      <!-- Tab content -->
       <div class="tab-content" id="scheduleTabsContent">
-        <!-- Upcoming Schedule Pane -->
+       <!-- upcoming schedule -->
         <div class="tab-pane fade show active" id="upcoming" role="tabpanel" aria-labelledby="upcoming-tab">
           <div class="d-flex justify-content-end mb-3">
             <input type="text" id="upcomingSearch" class="form-control w-auto" placeholder="Search upcoming...">
@@ -144,8 +142,8 @@
           <h5>Connect</h5>
           <ul class="list-unstyled mb-0">
             <li><a href="contactUs_page.html">Contact Us</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
+            <li><a href="https://www.instagram.com/foreignbodies/?hl=en">Instagram</a></li>
+            <li><a href="https://www.facebook.com/NYPForeignBodies/">Facebook</a></li>
           </ul>
         </div>
 
@@ -383,7 +381,7 @@
     async function initializePage() {
       // URLs for the data.
       const upcomingUrl = 'https://gist.githubusercontent.com/angelynnmr/f0a1c21268f333f3ec2dd3e1bb833823/raw/d4e55b12d0a43b41bf6372d52174e9aa24bfc9e2/upcomingSchedule.json';
-      const pastUrl = 'https://gist.githubusercontent.com/angelynnmr/f0a1c21268f333f3ec2dd3e1bb833823/raw/4fc55a340a7f154e65f3d6ece285503ae057fcb0/pastSchedule.json';
+      const pastUrl = 'https://gist.githubusercontent.com/angelynnmr/f0a1c21268f333f3ec2dd3e1bb833823/raw/debce12b46919f3925f2b2ed59bac715e8afb15c/pastSchedule.json';
 
       // Fetch both data sources in parallel for better performance.
       const [upcomingResult, pastResult] = await Promise.all([
