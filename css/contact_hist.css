@@ -226,6 +226,10 @@ body {
     font-size: 50px;
 }
 
+.achiv-depth {
+  margin-top: 50px;
+}
+
 
 
 /* History section */
@@ -236,4 +240,21 @@ body {
   border-radius: 12px;       
   width: 90%;
   margin: auto;
+}
+
+/* Contact us button at the bottom of awards & history page*/
+.contact-button {
+  display: inline-block;
+  font-size: 20px;           
+  font-weight: 500;
+  padding: 8px 16px;       
+  color: #fff;
+  background-color: #0d6efd; 
+  border: none;
+  border-radius: 6px;      
+  text-align: center;
+  text-decoration: none;
+}
+.contact-button:hover {
+  background-color: #0b5ed7;
 }
