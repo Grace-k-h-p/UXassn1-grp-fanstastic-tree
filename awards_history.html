@@ -6,8 +6,8 @@
         <title>Modern Dance | Awards and History</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="NavnFooter.css">
-        <link rel="stylesheet" href="contact_hist.css">
+        <link rel="stylesheet" href="css/navAndFooter.css">
+        <link rel="stylesheet" href="css/contact_hist.css">
     </head>
 
     <body>
@@ -18,7 +18,7 @@
 
                 <!-- logo that goes back to home -->
                 <a class="navbar-brand" href="home.html">
-                <img src="logo.png" alt="Modern Dance Logo" class="logo">
+                <img src="images/logo.png" alt="Modern Dance Logo" class="logo">
                 </a>
 
                 <!-- burger menu for small screens -->
@@ -58,7 +58,7 @@
                                 <div class="card-body">
                                     <div class="emoji">🏆</div>
                                     <h4 class="card-title" style="color: blue;"><b>2025</b></h4>
-                                    <p class="card-text">1st Place<br>National Dance Competition</p>
+                                    <p class="card-text">1st Place<br>National Dance Competition (Modern)</p>
                                     <span class="badge" style="background-color: blue;">Champion</span>
                                 </div>
                             </div>
@@ -95,6 +95,21 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="achiv-depth">
+                        <div>
+                            <h5><b>National Dance Competition</b></h5>
+                            <p>An annual event that gathers dancers nationwide to compete in various styles such as hip-hop, modern, jazz, traditional dance etc. <br>It serves as a platform to showcase talent, celebrate cultural diversity, and promote high standards in dance. 
+                            <br>Our CCA won the 1st Place in National Dance Competition under the Modern Dance Category.</p><br>
+                        </div>
+
+                        <div>
+                            <h5><b>Inter-College Dance Off</b></h5>
+                            <p>A competitive event where students from different colleges perform various dance styles to compete for top honors. 
+                            <br>It promotes talent, creativity, and school spirit while encouraging healthy competition and artistic expression.
+                            <br>Our practices and determination allowed us to win the 2nd Place for Inter-College Dance off.</p><br>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- History Section -->
@@ -111,12 +126,12 @@
             </div>
         </section>
 
-            <!-- Contact Us Section -->
+        <!-- Contact Us Section -->
         <section class="awardsHist-heading-bottom py-5">
             <div class="container text-center">
-                <h2 class="mb-4"><b>Get in Touch</b></h2>
-                <p class="mb-4">Have questions or want to join us? We’d love to hear from you!</p>
-                <a href="contactUs_page.html" class="btn btn-primary btn-lg">Contact Us</a>
+                <h2 style="margin-bottom: 8;"><b>Get in Touch</b></h2>
+                <p style="margin-bottom: 8; font-size: large;">Have questions or want to join us? We'd love to hear from you!</p>
+                <a href="contactUs_page.html" class="contact-button">Contact Us</a>
             </div>
         </section>
 
@@ -188,5 +203,24 @@
 
         <!-- bootstrap JS (makes navbar work and stuff) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {  //waits for html document to load
+                
+                // selects element with class contact-button
+                const contactButton = document.querySelector('.contact-button');  
+                if (contactButton) {
+                    contactButton.addEventListener("click", function(event) {
+                        event.preventDefault(); // Prevent immediate navigation
+                        const confirmed = confirm("Redirecting to contact us page...");
+                        if (confirmed) {
+                            window.location.href = contactButton.href; //redirect to contact us page
+                        }
+                    });
+                }
+            });
+        </script>
+           
     </body>
 </html>
