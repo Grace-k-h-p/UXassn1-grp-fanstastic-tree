@@ -195,6 +195,13 @@ tbody tr:nth-child(even) {
 
     
 }
+.upcmg:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-3px);
+    font-size: 30px;
+}
+/* Submission Confirmation */
+
 .submission {
     margin: 80px auto;
     width: 80%;
