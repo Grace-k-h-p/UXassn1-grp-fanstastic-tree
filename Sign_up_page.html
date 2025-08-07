@@ -9,7 +9,7 @@
   <!--my own style -->
   <link rel="stylesheet" href="css/navAndFooter.css">
 </head>
-<link rel="stylesheet" href="modern_dance.css">
+<link rel="stylesheet" href="css/modern_dance.css">
 
 <script>
   function check(admin){
@@ -27,7 +27,7 @@
 }
 </script>
 
-</script>
+
 <style>
   form {
     width: 90%;
@@ -52,7 +52,7 @@
 
         <!-- logo that goes back to home -->
         <a class="navbar-brand" href="home.html">
-          <img src="logo.png" alt="Modern Dance Logo" class="logo">
+          <img src="images/logo.png" alt="Modern Dance Logo" class="logo">
         </a>
 
         <!-- burger menu for small screens -->
@@ -73,62 +73,148 @@
       </div>
     </nav>
   </header>
-  <!--Sign up form-->
-    <div class="form">
-        <h2>Sign Up For Audition Here</h2><br>
-        
-        <form action="submit_form.html" method="post" >
-            <!--info-->
-            <br><div class="info">
-            <label for="name" class="name">First Name:</label>
-            <input type="text" id="name" class="text" name="name" required placeholder="Shernell " ><br><br>
+    <!--Sign up form-->
+  <div class="form">
+    <h2>Sign Up For Audition Here</h2><br>
+    
+    <form action="submit_form.html" method="post" >
+      <!--info-->
+      <div class="form-group">
+        <label for="firstname" class="name">First Name:</label>
+        <input type="text" id="firstname" class="text" name="firstname" required placeholder="Shernell">
+      </div>
 
-            <label for="name" class="name">Last Name:</label>
-            <input type="text" id="name" class="text" name="name" required placeholder="Ho "><br><br>
+      <div class="form-group">
+        <label for="lastname" class="name">Last Name:</label>
+        <input type="text" id="lastname" class="text" name="lastname" required placeholder="Ho">
+      </div>
+      
+      <div class="form-group">
+        <label for="email" class="email">Email:</label>
+        <input type="email" id="email" class="text" name="email" required placeholder="angelynngmr@gmail.com">
+      </div>
+      
+      <div class="form-group">
+        <label for="phone" class="phone">Phone:</label>
+        <input type="tel" id="phone" class="text" name="phone" required placeholder="12345678">
+      </div>
+      
+      <div class="form-group">
+        <label for="admin" class="admin">Admin no:</label>
+        <input type="text" id="admin" class="text" name="adminno" required placeholder="251095X">
+      </div>
+      
+      <!-- Gender -->
+      <label for="gender">Gender:</label><br>
+        <div class="radio-group">
+          <div class="radio-option">
+            <input type="radio" class="radio" name="gender" value="female" oninput="check(document.getElementById('admin'))">
+            <label for="female" class="gender">Female</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" class="radio" name="gender" value="male" oninput="check(document.getElementById('admin'))">
+            <label for="male" class="gender">Male</label>
+          </div>
+        </div><br>
 
-            <label for="email"class="email">Email:</label>
-            <input type="email" id="email" class="text" name="email" required placeholder="angelynngmr@gmail.com"><br><br>
-            
-            <label for="phone" class="phone">Phone:</label>
-            <input type="tel" id="phone" class="text" name="phone" required placeholder="12345678" ><br><br>
+      <!-- School -->
+      <div class="form-group">
+        <label for="sch">School of:</label>
+        <select id="sch" name="sch">
+          <option value="SIT">SIT</option>
+          <option value="SAS">SAS</option>
+          <option value="SEG">SEG</option>
+          <option value="SDM">SDM</option>
+          <option value="SBM">SBM</option>
+          <option value="SHSS">SHSS</option>
+        </select>
+      </div>
 
-            <label for="admin" class="admin">Admin no:</label>
-            <input type="text" id="admin" class="text" name="adminno" required placeholder="251095X" ><br><br>
+      <!-- Year -->
+      <label for="year">Year:</label><br>
+        <div class="radio-group">
+          <div class="radio-option">
+            <input type="radio" class="radio" name="year" value="Year 0(PFP)">
+            <label for="year">Year 0(PFP)</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" class="radio" name="year" value="Year 1">
+            <label for="year">Year 1</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" class="radio" name="year" value="Year 2">
+            <label for="year">Year 2</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" class="radio" name="year" value="Year 3">
+            <label for="year">Year 3</label>
+          </div>
+        </div><br>
 
-            <label for="gender">Gender:</label><br>
-            <input type="radio" id="radioo" name="gender" value="female" class="gender" oninput="check(admin)">
-            <label for="female" class="gender">Female</label><br>
-            <input type="radio" id="radioo" name="gender" value="male" class="gender" oninput="check(admin)">
-            <label for="male" class="gender">Male</label><br><br>
+      <!-- Dance experience -->
+     <label for="experience">Do you have dance experience?</label><br>
+      <div class="radio-group">
+        <div class="radio-option">
+          <input type="radio" id="yes" name="experience" value="yes">
+          <label for="yes">Yes</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="no" name="experience" value="no">
+          <label for="no">No</label>
+        </div>
+      </div><br>
 
-             <label for="sch">School of:</label>
-                <select id="sch" name="sch">
-                 <option value="SIT">SIT</option>
-                 <option value="SAS">SAS</option>
-                 <option value="SEG">SEG</option>
-                 <option value="SDM">SDM</option>
-                 <option value="SBM">SBM</option>
-                 <option value="SDM">SHSS</option>
-                </select><br><br>
-            <label for="year">Year:</label><br>
-            <input type="radio" id="radioo" name="year" value="Year 0(PFP)" class="gender">
-            <label for="year" class="gender">Year 0(PFP)</label><br>
-            <input type="radio" id="radioo" name="year" value="Year 1" class="gender">
-            <label for="year" class="gender">Year 1</label><br>
-            <input type="radio" id="radioo" name="year" value="Year 2" class="gender">
-            <label for="year" class="gender">Year 2</label><br>
-            <input type="radio" id="radioo" name="year" value="Year 3" class="gender">
-            <label for="year" class="gender">Year 3</label><br><br>
-            </div>
+      <!-- Dance styles -->
+      <label for="style">Dance style(s) you are interested in (you can select more than one):</label><br>
+        <div class="checkbox-group">
+          <div class="checkbox-option">
+            <input type="checkbox" id="hiphop" name="style" value="hiphop">
+            <label for="hiphop">Hip-hop</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" id="kpop" name="style" value="kpop">
+            <label for="kpop">K-pop</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" id="contemporary" name="style" value="contemporary">
+            <label for="contemporary">Contemporary</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" id="ballet" name="style" value="ballet">
+            <label for="ballet">Ballet</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" id="others" name="style" value="others">
+            <label for="others">Others</label><br>
+            <input type="text" id="otherstyle" name="otherstyle" placeholder="Please specify other styles">
+          </div>
+        </div><br>
 
-            <p for="why" class="why" >Why are you interested in joining us</p><br>
-            <textarea id="why" name="why" rows="3" cols="50" placeholder="I am interested in joining because..."></textarea><br><br>
-            
-            <button  type="submit" class="submit">Submit</button>
-            
-        </form>
-        
-    </div>
+      <!-- How did you hear about us -->
+      <div class="form-group" style="align-items: flex-start;">
+        <label for="hear" class="hear">How did you hear about us?</label>
+        <textarea id="hear" name="hear" rows="1" cols="50" placeholder="I heard about you through..."></textarea>
+      </div>
+      
+      <!-- Why are you interested in joining us -->
+      <div class="form-group" style="align-items: flex-start;">
+        <label for="why" class="why">Why are you interested in joining us?</label>
+        <textarea id="why" name="why" rows="3" cols="50" placeholder="I am interested in joining because..."></textarea>
+      </div>
+      
+      <!-- Additional comments -->
+      <div class="form-group" style="align-items: flex-start;">
+        <label for="comments" class="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="3" cols="50" placeholder="Any additional comments or questions..."></textarea>
+      </div>
+      
+      <!-- Submit button -->
+      <div class="text-end mt-3">
+        <button type="submit" class="btn btn-primary custom-submit">Submit</button>
+      </div>
+      
+    </form>
+  </div>
 
     <!-- footer with info  -->
   <footer class="site-footer">
