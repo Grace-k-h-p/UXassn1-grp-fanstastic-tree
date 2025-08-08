@@ -18,7 +18,7 @@
 
                 <!-- logo that goes back to home -->
                 <a class="navbar-brand" href="home.html">
-                <img src="images/logo.png" alt="Modern Dance Logo" class="logo">
+                <img src="images/modernDance_logo.png" alt="Modern Dance Logo" class="logo">
                 </a>
 
                 <!-- burger menu for small screens -->
@@ -32,7 +32,7 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ps-3 ps-lg-0">
                     <li class="nav-item"><a class="nav-link px-3" href="home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link px-3" href="schedule.html">Schedule</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="awards_history.html">Awards & History</a></li>
+                    <li class="nav-item" id="awards_history_tab"><a class="nav-link px-3" href="awards_history.html">Awards & History</a></li>
                     <li class="nav-item"><a class="nav-link px-3" href="upcmg.html">Upcoming Events</a></li>
                 </ul>
                 </div>
@@ -40,9 +40,9 @@
             </nav>
         </header>
 
-        <section class="pt-0 bg-white">
-
         
+
+        <!-- Awards & History main page heading -->
         <div class="award-titlebox">
             <div class="overlay"></div>
             <div class="title-content">
@@ -52,84 +52,114 @@
         </div>  
         
 
-        <section class="container-awardsHist py-5">
-            <div class="row g-5">
-                <!-- Awards Section -->
-                <div class="achievements-section">
-                    <h2 class="achievements-title"><b>🌟 Our Achievements</b></h2>
-                    <div class="achiv-box">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="achievement-card">
-                                <div class="card-body">
-                                    <div class="emoji">🏆</div>
-                                    <h4 class="card-title" style="color: blue;"><b>2025</b></h4>
-                                    <p class="card-text">1st Place<br>National Dance Competition (Modern)</p>
-                                    <span class="badge" style="background-color: blue;">Champion</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="achievement-card">
-                                <div class="card-body">
-                                <div class="emoji">🥈</div>
-                                <h4 class="card-title" style="color: red;"><b>2024</b></h4>
-                                <p class="card-text">2nd Place<br>Inter-College Dance Off</p>
-                                <span class="badge" style="background-color: red;">Runner-Up</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="achievement-card">
-                                <div class="card-body">
-                                <div class="emoji">🏅</div>
-                                <h4 class="card-title" style="color: rgb(196, 196, 5);"><b>2023</b></h4>
-                                <p class="card-text">Most Creative<br>Choreography Award</p>
-                                <span class="badge" style="background-color: rgb(196, 196, 5);">Creativity</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3">
-                            <div class="achievement-card">
-                                <div class="card-body">
-                                <div class="emoji">✨</div>
-                                <h4 class="card-title" style="color: green;"><b>2022</b></h4>
-                                <p class="card-text">Best Newcomer<br>CCA Excellence Awards</p>
-                                <span class="badge" style="background-color: green;">Rising Star</span>
-                                </div>
-                            </div>
+        <!-- Awards Section -->
+        <div class="achievements-section">
+            <h2 class="achievements-title"><b>🌟 Our Achievements</b></h2>
+            <div class="row g-4 achiv-box">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="achievement-card">
+                        <div class="card-body">
+                            <div class="emoji">🏆</div>
+                            <h4 class="card-title" style="color: blue;"><b>2025</b></h4>
+                            <p class="card-text">1st Place<br>National Dance Competition (Modern)</p>
+                            <span class="badge" style="background-color: blue;">Champion</span>
                         </div>
                     </div>
-
-                    <div class="achiv-depth">
-                        <div>
-                            <h5><b>National Dance Competition</b></h5>
-                            <p>An annual event that gathers dancers nationwide to compete in various styles such as hip-hop, modern, jazz, traditional dance etc. <br>It serves as a platform to showcase talent, celebrate cultural diversity, and promote high standards in dance. 
-                            <br>Our CCA won the 1st Place in National Dance Competition under the Modern Dance Category.</p><br>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="achievement-card">
+                        <div class="card-body">
+                        <div class="emoji">🥈</div>
+                        <h4 class="card-title" style="color: red;"><b>2024</b></h4>
+                        <p class="card-text">2nd Place<br>Inter-College Dance Off</p>
+                        <span class="badge" style="background-color: red;">Runner-Up</span>
                         </div>
-
-                        <div>
-                            <h5><b>Inter-College Dance Off</b></h5>
-                            <p>A competitive event where students from different colleges perform various dance styles to compete for top honors. 
-                            <br>It promotes talent, creativity, and school spirit while encouraging healthy competition and artistic expression.
-                            <br>Our practices and determination allowed us to win the 2nd Place for Inter-College Dance off.</p><br>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="achievement-card">
+                        <div class="card-body">
+                        <div class="emoji">🏅</div>
+                        <h4 class="card-title" style="color: rgb(196, 196, 5);"><b>2023</b></h4>
+                        <p class="card-text">Most Creative<br>Choreography Award</p>
+                        <span class="badge" style="background-color: rgb(196, 196, 5);">Creativity</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- History Section -->
-                <div class="history-section">
-                    <h2 class="history-title"><b>CCA History</b></h2><br>
-                    <p>
-                        The Modern Dance Co-Curricular Activity (CCA) was established in 2021 with the aim of providing students a creative platform to express themselves through contemporary and urban dance styles. What began with a small group of passionate dancers has grown into a vibrant and dynamic community.
-                        <br><br>
-                        Over the years, our team has participated in numerous school events, external competitions, and workshops, consistently impressing audiences with our energy, teamwork, and originality. Highlights include our performances in the annual Arts Showcase and achieving podium finishes in inter-college dance battles.
-                        <br><br>
-                        More than just dance, our CCA focuses on building confidence, discipline, and camaraderie among members. As we continue to evolve, we remain committed to nurturing talent, embracing innovation, and sharing the joy of dance with the wider school community.
-                    </p>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="achievement-card">
+                        <div class="card-body">
+                        <div class="emoji">✨</div>
+                        <h4 class="card-title" style="color: green;"><b>2022</b></h4>
+                        <p class="card-text">Best Newcomer<br>CCA Excellence Awards</p>
+                        <span class="badge" style="background-color: green;">Rising Star</span>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
+            <div class="achiv-depth">
+                <div>
+                    <h5><b>National Dance Competition</b></h5>
+                    <p>An annual event that gathers dancers nationwide to compete in various styles such as hip-hop, modern, jazz, traditional dance etc. <br>It serves as a platform to showcase talent, celebrate cultural diversity, and promote high standards in dance. 
+                    <br>Our CCA won the 1st Place in National Dance Competition under the Modern Dance Category.</p><br>
+                </div>
+
+                <div>
+                    <h5><b>Inter-College Dance Off</b></h5>
+                    <p>A competitive event where students from different colleges perform various dance styles to compete for top honors. 
+                    <br>It promotes talent, creativity, and school spirit while encouraging healthy competition and artistic expression.
+                    <br>Our practices and determination allowed us to win the 2nd Place for Inter-College Dance off.</p><br>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="timeline">
+            <ol>
+                <li>
+                <div>
+                    <time>2021</time> Our Modern Dance Co-Curricular Activity (CCA) was established by a small group of passionate dancers.
+                </div>
+                </li>
+                <li>
+                <div>
+                    <time>2022</time> Won our first CCA Excellence Award as a newly established CCA.
+                </div>
+                </li>
+                <li>
+                <div>
+                    <time>2023</time> Compete in a choreography competition and won 3rd place as the Most Creative Choreography Award.
+                </div>
+                </li>
+                <li>
+                <div>
+                    <time>2024</time> Went to take part in a dance off competition where different colleges come together to compete against each other. Won 2nd place in dance off.
+                </div>
+                </li>
+                <li>
+                <div>
+                    <time>2025</time> Received an invitation to compete in National Dance Competition event and won 1st place in Modern Dance Category.
+                </div>
+                </li>
+                <li></li>
+            </ol>
         </section>
+
+
+        <!-- History Section -->
+        <div class="history-section">
+            <h2 class="history-title"><b>CCA History</b></h2><br>
+            <p>
+                The Modern Dance Co-Curricular Activity (CCA) was established in 2021 with the aim of providing students a creative platform to express themselves through contemporary and urban dance styles. What began with a small group of passionate dancers has grown into a vibrant and dynamic community.
+                <br><br>
+                Over the years, our team has participated in numerous school events, external competitions, and workshops, consistently impressing audiences with our energy, teamwork, and originality. Highlights include our performances in the annual Arts Showcase and achieving podium finishes in inter-college dance battles.
+                <br><br>
+                More than just dance, our CCA focuses on building confidence, discipline, and camaraderie among members. As we continue to evolve, we remain committed to nurturing talent, embracing innovation, and sharing the joy of dance with the wider school community.
+            </p>
+        </div>
+
 
         <!-- Contact Us Section -->
         <section class="awardsHist-heading-bottom py-5">

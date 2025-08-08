@@ -1,6 +1,10 @@
 /* Contact Us page CSS */
 body {
-    background: #9cbcd3;
+  background-color: #9cbcd3;
+}
+#awards_history_tab {
+  background-color: rgba(128, 128, 128, 0.5); /* gray with 50% opacity */
+  border-radius: 10px;
 }
 
 /* --- Contact Form Section --- */
@@ -172,7 +176,8 @@ body {
 /* Our achievements section */
 .achievements-section {
   margin-bottom: 48px;          
-  padding: 24px;                
+  padding: 24px;
+  margin: 20px auto; 
   background-color: #ffffff;
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
@@ -247,6 +252,103 @@ body {
   margin-top: 50px;
 }
 
+/* timeline section */
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 250px 0;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 160px;
+  height: 3px;
+  background: gray;
+}
+
+.timeline ol li:last-child {
+  width: 280px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #f45b69;
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 280px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background: lightblue;
+}
+
+.timeline ol li div::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+/* add arrows on the odd side from the list to point it to the line */
+.timeline ol li:nth-child(odd) div::before { 
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: lightblue transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+/* add arrows on the even side from the list box */
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent lightblue;
+}
+
+.timeline time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
 
 
 /* History section */
