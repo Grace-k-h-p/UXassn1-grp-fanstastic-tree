@@ -11,21 +11,8 @@
 </head>
 <link rel="stylesheet" href="css/modern_dance.css">
 
-<script>
-  function check(admin){
-    console.log(1)
 
-      var adminno= document.getElementById('admin').value
-     console.log(2)
-    if (adminno.length !== 7){ 
-    alert("Invalid admin number");
-    document.getElementById("admin").value = "";
-    console.log(4);
-  } else {
-    console.log("Valid admin number");
-  }
-}
-</script>
+
 
 
 <style>
@@ -41,6 +28,7 @@
   h2 {
     text-align: center;
     margin-bottom: 10px;
+    font-weight: bold;
   }
   
 </style>
@@ -74,10 +62,10 @@
     </nav>
   </header>
     <!--Sign up form-->
-  <div class="form">
-    <h2>Sign Up For Audition Here</h2><br>
-    
-    <form action="submit_form.html" method="post" >
+  <div class="form" style="background-image: url('images/final.jpg');">
+    <h2 style="color: white;">Sign Up For Audition Here</h2><br>
+
+    <form action="submit_form.html" method="post" onsubmit="return check(document.getElementById('admin'))" id="form">
       <!--info-->
       <div class="form-group">
         <label for="firstname" class="name">First Name:</label>
@@ -108,11 +96,11 @@
       <label for="gender">Gender:</label><br>
         <div class="radio-group">
           <div class="radio-option">
-            <input type="radio" class="radio" name="gender" value="female" oninput="check(document.getElementById('admin'))">
+            <input type="radio" class="radio" name="gender" value="female" id="female">
             <label for="female" class="gender">Female</label>
           </div>
           <div class="radio-option">
-            <input type="radio" class="radio" name="gender" value="male" oninput="check(document.getElementById('admin'))">
+            <input type="radio" class="radio" name="gender" value="male" id="male">
             <label for="male" class="gender">Male</label>
           </div>
         </div><br>
@@ -134,20 +122,20 @@
       <label for="year">Year:</label><br>
         <div class="radio-group">
           <div class="radio-option">
-            <input type="radio" class="radio" name="year" value="Year 0(PFP)">
-            <label for="year">Year 0(PFP)</label>
+            <input type="radio" class="radio" name="year" id="Year 0(PFP)" value="Year 0(PFP)">
+            <label for="Year 0(PFP)">Year 0(PFP)</label>
           </div>
           <div class="radio-option">
-            <input type="radio" class="radio" name="year" value="Year 1">
-            <label for="year">Year 1</label>
+            <input type="radio" class="radio" name="year" id="Year 1" value="Year 1">
+            <label for="Year 1">Year 1</label>
           </div>
           <div class="radio-option">
-            <input type="radio" class="radio" name="year" value="Year 2">
-            <label for="year">Year 2</label>
+            <input type="radio" class="radio" name="year" id="Year 2" value="Year 2">
+            <label for="Year 2">Year 2</label>
           </div>
           <div class="radio-option">
-            <input type="radio" class="radio" name="year" value="Year 3">
-            <label for="year">Year 3</label>
+            <input type="radio" class="radio" name="year" id="Year 3" value="Year 3">
+            <label for="Year 3">Year 3</label>
           </div>
         </div><br>
 
@@ -286,6 +274,21 @@
   <!-- bootstrap JS (makes navbar work and stuff) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<script>
+  document.querySelector("form").addEventListener("submit", function (event) {
+    event.preventDefault(); // stops redirect/reload
+
+    let adminno = document.getElementById("admin").value.trim();
+
+    if (!/^[0-9]{6}[A-Z]$/.test(adminno)) {
+      alert("Invalid admin number format. It should be 6 digits followed by a letter.");
+      document.getElementById("admin").value = "";
+      return; // stop here if invalid
+    } else {
+      console.log("Valid admin number");
+    }
+  });
+</script>
 </html>
 
 
