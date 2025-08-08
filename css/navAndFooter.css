@@ -25,12 +25,12 @@ form {
 /* This makes the hamburger menu icon solid white and more visible */
 /* Responsive navbar logo size */
 .logo {
-  width: 50px;
+  width: 150px;
   height: auto;
 }
 @media (min-width: 992px) { /* Large screens (Bootstrap lg breakpoint) */
   .logo {
-    width: 85px;
+    width: 180px;
   }
 }
 .navbar-dark .navbar-toggler-icon {
