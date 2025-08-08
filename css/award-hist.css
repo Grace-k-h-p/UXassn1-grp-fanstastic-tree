@@ -1,142 +1,12 @@
-/* Contact Us page CSS */
+/* ---------------------------------------- Awards and history page CSS ----------------------------------------*/
 body {
   background-color: #9cbcd3;
 }
+
 #awards_history_tab {
   background-color: rgba(128, 128, 128, 0.5); /* gray with 50% opacity */
   border-radius: 10px;
 }
-
-/* --- Contact Form Section --- */
-.container-contact {
-  align-items: start;
-  justify-content: center;
-  background-color: #eaeff4;
-  height: 700px;
-  padding: 50px;
-  margin: 40px;
-  border-radius: 10px;
-  background-image: url("https://www.smc.edu/news/2023/images/Group-Synapse.jpg");
-  overflow: hidden; /* ensures overlay doesn't overflow */
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-  position: relative;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(15, 15, 30, 0.4); /* dark navy tint */
-  z-index: 1;
-}
-.row {
-  position: relative;
-  z-index: 2;
-}
-
-
-#contact-title {
-  font-weight: bold;
-}
-
-.contact-info {
-  margin-top: 50px;
-  color: white;
-}
-
-/* FAQ container */
-.faq-container {
-  max-width: 600px;
-  margin: auto;
-  border-radius: 12px;
-  font-family: Arial, sans-serif;
-}
-
-.faq-question {
-  width: 100%;
-  text-align: left;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-size: 16px;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-}
-
-.faq-item {
-  border-top: 2px solid #aeaeae;
-}
-.faq-question {
-  color: white;
-}
-
-.faq-question::after {
-  content: '\25BC'; /* down arrow */
-  position: absolute;
-  right: 20px;
-  transition: transform 0.3s;
-}
-
-.faq-question.active::after {
-  transform: rotate(180deg);
-}
-
-.faq-answer {
-  display: none;
-  padding: 0 15px 15px;
-  color: rgb(246, 246, 246);
-  font-size: 14px;
-}
-
-
-/* Contact Form */
-.form-box {
-    margin-left: 40px;
-    padding: 24px;
-    border-radius: 10px;
-    background-color: #fdfdfd;
-    width: 500px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.368);
-}
-
-.contact-form input,
-.contact-form textarea {
-    background-color: #f8f9fa;
-    border: 1px solid #ced4da;
-    border-radius: 8px;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 0 0.15rem rgba(0,123,255,.25);
-    outline: none;
-}
-
-.contact-form button {
-    border-radius: 8px;
-    background-color: #007bff;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3;
-}
-
-
-
-
-
-/* Awards and history page CSS */
 
 .award-titlebox {
   display: flex;
@@ -158,6 +28,16 @@ body {
   position: relative;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(15, 15, 30, 0.4); /* dark navy tint */
+  z-index: 1;
+}
+
 /* css to ensure words are not covered by overlay */
 .title-content { 
   position: relative;
@@ -173,7 +53,7 @@ body {
   width: 90%;
 }
 
-/* Our achievements section */
+/* ------------------ Our achievements section ------------------ */
 .achievements-section {
   margin-bottom: 48px;          
   padding: 24px;
@@ -181,7 +61,7 @@ body {
   background-color: #ffffff;
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   min-height: 500px;
@@ -197,18 +77,16 @@ body {
     display: flex;
 }
 
+
 .achievement-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* animates card when hover over, "ease" means animation starts slow and speds up */
     background: #fdfdfd;
     padding: 30px;      
-
     border: none;
     border-radius: 12px;
-
     margin-top: 45px;
     margin-left: 5px;
     margin-right: 5px;
-
     
     min-height: 325px;
     text-align: center;
@@ -223,7 +101,6 @@ body {
 }
 .card-body {
     align-content: center;
-    
 }
 
 .achievement-card .card-title {
@@ -250,12 +127,29 @@ body {
 
 .achiv-depth {
   margin-top: 50px;
+  font-size: medium;
 }
 
-/* timeline section */
 
-/* TIMELINE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ------------------ History section ------------------ */
+.history-section {
+  padding: 24px;                          
+  padding-bottom: none;
+  background-color: #ffffff;               
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+  border-radius: 12px;       
+  width: 95%;
+  margin: auto;
+}
+.history-section p {
+    font-size: medium;
+}
+
+/* ------------------ timeline section ------------------ */
+.hist-timeline {
+  padding-top: 15px;
+  text-align: center;
+}
 
 .timeline {
   white-space: nowrap;
@@ -267,6 +161,11 @@ body {
   width: 100vw;
   padding: 250px 0;
   transition: all 1s;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .timeline ol li {
@@ -308,6 +207,28 @@ body {
   white-space: normal;
   color: black;
   background: lightblue;
+  overflow: hidden;
+  max-height: 50px;          /* Enough to show the year line */
+  border-radius: 5px;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* Style the year */
+.timeline ol li div time {
+  display: block;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Hide only the description text initially */
+.timeline ol li div p {
+  opacity: 1;                /* year is visible */
+}
+
+/* Expand description on hover */
+.timeline ol li:hover div {
+  max-height: 250px;         /* adjust as needed */
 }
 
 .timeline ol li div::before {
@@ -320,45 +241,23 @@ body {
   border-style: solid;
 }
 
-.timeline ol li:nth-child(odd) div {
+/* selects every odd <li> */
+.timeline ol li:nth-child(odd) div { 
   top: -16px;
   transform: translateY(-100%);
 }
 
-/* add arrows on the odd side from the list to point it to the line */
-.timeline ol li:nth-child(odd) div::before { 
-  top: 100%;
-  border-width: 8px 8px 0 0;
-  border-color: lightblue transparent transparent transparent;
-}
-
+/* selects every even <li> */
 .timeline ol li:nth-child(even) div {
   top: calc(100% + 16px);
 }
 
-/* add arrows on the even side from the list box */
-.timeline ol li:nth-child(even) div::before {
-  top: -8px;
-  border-width: 8px 0 0 8px;
-  border-color: transparent transparent transparent lightblue;
-}
 
 .timeline time {
   display: block;
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 8px;
-}
-
-
-/* History section */
-.history-section {
-  padding: 24px;                          
-  background-color: #ffffff;               
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
-  border-radius: 12px;       
-  width: 90%;
-  margin: auto;
 }
 
 /* Contact us button at the bottom of awards & history page*/
@@ -376,4 +275,62 @@ body {
 }
 .contact-button:hover {
   background-color: #0b5ed7;
+}
+
+@media (max-width: 768px) {
+  /* Make timeline container stack vertically and wrap */
+  .timeline {
+    white-space: normal !important;
+    overflow-x: visible !important;
+  }
+
+  /* Make ol a block and no fixed width */
+  .timeline ol {
+    display: block !important;
+    width: auto !important;
+    padding: 0 !important;
+    font-size: 1rem !important;
+  }
+
+  /* Make each timeline item a block, no fixed width/height, no position absolute */
+  .timeline ol li {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 15px 0 !important;
+    background: none !important;
+  }
+
+  /* Remove dots/lines */
+  .timeline ol li::after {
+    display: none !important;
+  }
+
+  /* Make content div block, full width, no absolute position */
+  .timeline ol li div {
+    position: static !important;
+    width: 100% !important;
+    max-height: none !important;
+    background: #fdfdfd !important;
+    padding: 30px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075) !important;
+    color: black !important;
+    font-size: 1rem !important;
+    overflow: visible !important;
+  }
+
+  /* Remove arrow pointers */
+  .timeline ol li div::before {
+    display: none !important;
+  }
+
+  /* Style year to be bigger, bold, and spaced nicely */
+  .timeline ol li div time {
+    display: block !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    margin-bottom: 12px !important;
+  }
 }
