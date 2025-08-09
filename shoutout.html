@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modern Dance | Shoutout Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/navAndFooter.css">
+    <link rel="stylesheet" href="css/shoutout.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #9cbcd3;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                    <img src="images/modernDance_logo.png" alt="Modern Dance Logo" class="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ps-3 ps-lg-0">
+                        <li class="nav-item"><a class="nav-link px-3" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="schedule.html">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="awards_history.html">Awards & History</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link px-3" href="upcmg.html">Upcoming Events</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-intro d-flex align-items-center text-center position-relative hero-celebration">
+        <img src="images/shoutoutBg.jpg" alt="Celebration background" class="hero-bg-img">
+        <div class="overlay"></div>
+        <div class="container position-relative hero-content">
+            <h1 class="display-4 fw-bold text-white">🎉 Shoutout Board 🎉</h1>
+            <p class="lead text-white"> Leave a kind word or encouragement for any dance member! Your shoutout will
+                appear as a post-it on the
+                board below.</p>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-lg-7 order-2 order-lg-1 mb-5 mb-lg-0">
+                    <div class="shoutout-board" id="shoutoutBoard"></div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <form id="shoutoutForm" class="shoutout-form" onsubmit="handleShoutoutSubmit(event)">
+                        <div class="mb-3">
+                            <label for="member" class="form-label">Shoutout To</label>
+                            <input type="text" class="form-control" id="member" placeholder="Enter member's name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Shoutout</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Write your message..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary fw-bold">Pin Shoutout</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5>About Modern Dance</h5>
+                    <p class="text-muted small">No judgments, just vibe. We're a passionate and welcoming dance group
+                        that
+                        performs, trains and has fun together.</p>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="awards_history.html">Awards</a></li>
+                        <li><a href="Sign_up_page.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6 mb-4 mb-lg-0">
+                    <h5>Connect</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="contactUs_page.html">Contact Us</a></li>
+                        <li><a href="https://www.instagram.com/foreignbodies/?hl=en">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/NYPForeignBodies/">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 text-md-start">
+                    <h5>Contact</h5>
+                    <p class="text-muted small mb-0">
+                        <a href="mailto:moderndancenyp@gmail.com">Email: moderndancenyp@gmail.com</a>
+                    </p>
+                </div>
+
+            </div>
+            <hr>
+            <div class="row align-items-center">
+                <div class="col-md-8 col-sm-6 col-12">
+                    <p class="copyright-text text-muted small mb-0">
+                        &copy; 2025 Modern Dance CCA. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <ul class="list-inline text-sm-end text-center mb-0">
+                        <li class="list-inline-item">
+                            <a href="privacy_policy.html" class="text-muted small">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="terms_of_service.html" class="text-muted small">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const shoutoutForm = document.getElementById('shoutoutForm');
+        const memberInput = document.getElementById('member');
+        const messageInput = document.getElementById('message');
+        const shoutoutBoard = document.getElementById('shoutoutBoard');
+        const PIN_IMG = "https://cdn-icons-png.flaticon.com/512/32/32177.png";
+
+        function getShoutouts() {
+            return JSON.parse(localStorage.getItem('shoutouts') || '[]');
+        }
+
+        function saveShoutouts(shoutouts) {
+            localStorage.setItem('shoutouts', JSON.stringify(shoutouts));
+        }
+
+        function renderShoutouts() {
+            const shoutouts = getShoutouts();
+            shoutoutBoard.innerHTML = '';
+            shoutouts.forEach(s => {
+                const div = document.createElement('div');
+                div.className = 'post-it position-relative';
+                div.innerHTML = `
+            <i class="bi bi-pin-angle-fill pin" style="font-size: 1.7rem; color: #b48a00; position: absolute; top: -18px; left: 50%; transform: translateX(-50%); z-index: 2;"></i>
+            <span class="to">To: ${s.member}</span>
+            <span class="msg">${s.message}</span>
+            <span class="date">${s.date}</span>
+        `;
+                shoutoutBoard.appendChild(div);
+            });
+        }
+        renderShoutouts();
+
+        handleShoutoutSubmit = (e) => {
+            e.preventDefault();
+            const member = document.getElementById('member').value.trim();
+            const message = document.getElementById('message').value.trim();
+            if (member && message) {
+                const shoutouts = getShoutouts();
+                shoutouts.unshift({
+                    member,
+                    message,
+                    date: new Date().toLocaleString()
+                });
+                saveShoutouts(shoutouts);
+                renderShoutouts();
+                document.getElementById('shoutoutForm').reset();
+            }
+            return false; // to prevent default form submission
+        }
+    </script>
