@@ -164,19 +164,19 @@
             <label for="kpop">K-pop</label>
           </div>
           <div class="checkbox-option">
-            <input type="checkbox" id="contemporary" name="style" value="contemporary">
-            <label for="contemporary">Contemporary</label>
-          </div>
-          <div class="checkbox-option">
             <input type="checkbox" id="ballet" name="style" value="ballet">
             <label for="ballet">Ballet</label>
           </div>
           <div class="checkbox-option">
             <input type="checkbox" id="others" name="style" value="others">
-            <label for="others">Others</label><br>
-            <input type="text" id="otherstyle" name="otherstyle" placeholder="Please specify other styles">
+            <label for="others">Others</label><br><br>
           </div>
-        </div><br>
+        </div>
+      <!-- if choose others for dance -->
+      <div class="form-group" style="align-items: flex-start;">
+        <label for="others" class="others">If you chose others please specify:</label>
+        <textarea id="others" name="others" rows="1" cols="50" placeholder=""></textarea>
+      </div>
 
       <!-- How did you hear about us -->
       <div class="form-group" style="align-items: flex-start;">
