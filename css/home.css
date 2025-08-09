@@ -1,4 +1,4 @@
-/* === Hero Section with Video Background === */
+/* hero section with vid bg */
 .hero-intro {
   position: relative;
   overflow: hidden;
@@ -27,7 +27,7 @@
   z-index: -1;
 }
 
-/* === About Us Section */
+/* about us section */
 .icon-circle {
   width: 70px;
   height: 70px;
@@ -53,23 +53,20 @@
   transform: scale(1.1);
 }
 
-/* Optional - make section subtly different from others */
+/* make section subtly diff from others */
 .bg-body-tertiary {
   background-color: #f8f9fa !important;
 }
 
-/* === Testimonials Section === */
+/* testimonials section */
 .testimonial-card {
   background-color: #fff;
-  /* White card background */
   border: 1px solid #dee2e6;
-  /* A light border */
+  /* a light border */
   border-radius: 10px;
   padding: 40px;
   max-width: 750px;
-  /* To keep it from stretching too wide */
   margin: auto;
-  /* Center it within the carousel item */
   text-align: center;
 }
 
@@ -94,14 +91,13 @@
   object-fit: cover;
 }
 
-/* Style carousel controls to be visible on a light background */
+/* style carousel controls to be visible on a light background */
 #testimonialCarousel .carousel-control-prev-icon,
 #testimonialCarousel .carousel-control-next-icon {
   filter: invert(1);
-  /* Makes the default white icons black */
 }
 
-/* === Highlights Section: Counters === */
+/* counters */
 .counter-number {
   font-weight: 700;
   line-height: 1;
@@ -111,23 +107,23 @@
 .counter-number.primary {
   font-size: 6rem;
   color: #0d6efd;
-  /* Brighter color (Bootstrap primary) */
+  /* brighter color (bootstrap primary) */
 }
 
 .counter-number.secondary {
   font-size: 3.5rem;
   color: #6c757d;
-  /* Lighter color (Bootstrap secondary text) */
+  /* lighter color (bootstrap secondary text) */
 }
 
 .counter-label {
   font-size: 1.1rem;
   color: #6c757d;
-  /* Bootstrap secondary text color */
+  /* bootstrap secondary text color */
   margin-bottom: 0;
 }
 
-/* === Highlights Section: Accolades Scroller === */
+/* accolades scroller */
 .logo-marquee {
   margin: auto;
   overflow: hidden;
@@ -139,7 +135,6 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  /* Increased gap for better spacing */
   width: max-content;
   animation: scroll 15s linear infinite;
 }
@@ -169,7 +164,7 @@
   }
 }
 
-/* === Shoutout Section === */
+/* shoutout section */
 .loudspeaker-img {
     max-height: 340px;
     object-fit: contain;

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -165,12 +164,10 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // This is where we store the schedule information.
-    let upcomingSchedules = []; // Will be populated by fetching from a JSON file.
-    let pastSchedules = []; // Will be populated by fetching from a JSON file.
+    //storing the schedule info
+    let upcomingSchedules = [];
+    let pastSchedules = []; 
 
-    // --- DOM ELEMENTS ---
-    // We get references to the parts of the page we want to interact with.
     const upcomingTableBody = document.getElementById('upcoming-table-body');
     const pastCardsContainer = document.getElementById('past-cards-container');
     const upcomingSearchInput = document.getElementById('upcomingSearch');
@@ -183,20 +180,11 @@
   videoIframe.src = '';
 });
 
-
-
-    // --- PAGINATION STATE ---
     let currentPage = 1;
-    const rowsPerPage = 6; // Better for a card grid layout (2x3 or 3x2)
+    const rowsPerPage = 6;
 
-    // --- FUNCTIONS ---
-
-    /**
-     * Renders the rows for the "Upcoming Schedule" table.
-     * @param {Array} schedules - The array of schedule data to display.
-     */
     function renderUpcomingTable(schedules) {
-      upcomingTableBody.innerHTML = ''; // Clear existing rows
+      upcomingTableBody.innerHTML = ''; //clear existing rows
       if (schedules.length === 0) {
         upcomingTableBody.innerHTML = '<tr><td colspan="4" class="text-muted">No upcoming schedules found.</td></tr>';
         return;
@@ -212,13 +200,8 @@
       });
     }
 
-    /**
-     * Renders the "Past Schedule" items as cards with video previews.
-     * @param {Array} schedules - The array of schedule data to display.
-     * @param {number} page - The current page number.
-     */
     function renderPastCards(schedules, page) {
-      pastCardsContainer.innerHTML = ''; // Clear existing cards
+      pastCardsContainer.innerHTML = '';
 
       const startIndex = (page - 1) * rowsPerPage;
       const endIndex = startIndex + rowsPerPage;
@@ -228,7 +211,6 @@
         pastCardsContainer.innerHTML = '<div class="col-12"><p class="text-center text-muted">No past schedules found.</p></div>';
         return;
       }
-
       paginatedItems.forEach(item => {
         let cardHTML = '';
         const videoId = getYouTubeVideoId(item.videoUrl);
@@ -267,24 +249,16 @@
         pastCardsContainer.innerHTML += cardHTML;
       });
     }
-
-    /**
-     * Sets up simple Previous/Next pagination controls, which is easier for beginners.
-     * @param {Array} schedules - The full array of schedule data.
-     */
     function setupPagination(schedules) {
-      paginationControls.innerHTML = ''; // Clear old controls
+      paginationControls.innerHTML = ''; //clear old controls
       const pageCount = Math.ceil(schedules.length / rowsPerPage);
 
       if (pageCount <= 1) {
-        return; // No need for pagination if there's only one page or less.
+        return;
       }
-
-      // Determine if the Previous and Next buttons should be disabled
       const prevDisabledClass = currentPage === 1 ? 'disabled' : '';
       const nextDisabledClass = currentPage === pageCount ? 'disabled' : '';
 
-      // Create the HTML for the simplified pagination controls
       const paginationHTML = `
         <li class="page-item ${prevDisabledClass}">
           <a class="page-link" href="#" onclick="event.preventDefault(); changePage(${currentPage - 1})">Previous</a>
@@ -298,44 +272,27 @@
       paginationControls.innerHTML = paginationHTML;
     }
 
-    /**
-     * Handles changing the page for the past schedules table.
-     * @param {number} page - The page number to navigate to.
-     */
     function changePage(page) {
       const filteredSchedules = getFilteredPastSchedules();
       const pageCount = Math.ceil(filteredSchedules.length / rowsPerPage);
-      if (page < 1 || page > pageCount) return; // Prevent going to invalid pages
+      if (page < 1 || page > pageCount) return; //prevent going to invalid pages
 
       currentPage = page;
       renderPastCards(filteredSchedules, currentPage);
       setupPagination(filteredSchedules);
     }
 
-    /**
-     * Extracts the YouTube video ID from various URL formats.
-     * @param {string} url - The YouTube URL.
-     * @returns {string|null} The video ID or null if not found.
-     */
     function getYouTubeVideoId(url) {
       if (!url) return null;
       const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
       const match = url.match(regExp);
       return (match && match[2].length === 11) ? match[2] : null;
     }
-
-    /**
-     * Opens the Bootstrap modal and sets the video source.
-     * @param {string} url - The URL of the YouTube video to embed.
-     */
     function openVideoModal(url) {
       videoIframe.src = url;
       videoModal.show();
     }
 
-    /**
-     * Helper function to get the currently filtered past schedules.
-     */
     function getFilteredPastSchedules() {
       const searchTerm = pastSearchInput.value.toLowerCase();
       return pastSchedules.filter(item =>
@@ -345,9 +302,6 @@
       );
     }
 
-    /**
-     * Helper function to get the currently filtered upcoming schedules.
-     */
     function getFilteredUpcomingSchedules() {
       const searchTerm = upcomingSearchInput.value.toLowerCase();
       return upcomingSchedules.filter(item =>
@@ -357,32 +311,21 @@
       );
     }
 
-    /**
-     * Handles filtering and re-rendering the upcoming schedules table based on search input.
-     */
     function handleUpcomingSearch() {
       const filteredSchedules = getFilteredUpcomingSchedules();
       renderUpcomingTable(filteredSchedules);
     }
 
-    /**
-     * Handles filtering and re-rendering the past schedules table based on search input.
-     */
     function handlePastSearch() {
-      currentPage = 1; // Reset to first page on new search
+      currentPage = 1; // reset to first page on new search
       const filteredSchedules = getFilteredPastSchedules();
       renderPastCards(filteredSchedules, currentPage);
       setupPagination(filteredSchedules);
     }
 
-    /**
-     * Initializes the page by fetching remote data and rendering the initial view.
-     */
     async function initializePage() {
-      // URLs for the data.
       const upcomingUrl = 'https://gist.githubusercontent.com/angelynnmr/f0a1c21268f333f3ec2dd3e1bb833823/raw/d4e55b12d0a43b41bf6372d52174e9aa24bfc9e2/upcomingSchedule.json';
       const pastUrl = 'https://gist.githubusercontent.com/angelynnmr/f0a1c21268f333f3ec2dd3e1bb833823/raw/b2e78fb394f7dffbaa4725df63cb62efabff3db4/pastSchedule.json';
-      // Fetch both data sources in parallel for better performance.
       const [upcomingResult, pastResult] = await Promise.all([
         fetch(upcomingUrl).then(res => {
           if (!res.ok) throw new Error(`Upcoming fetch failed: ${res.status}`);
@@ -394,7 +337,7 @@
         }).catch(e => ({ error: e }))
       ]);
 
-      // Process upcoming schedules
+      //process upcoming schedules
       if (upcomingResult.error) {
         console.error("Could not fetch upcoming schedules:", upcomingResult.error);
         upcomingTableBody.innerHTML = '<tr><td colspan="4" class="text-danger text-center">Could not load upcoming schedule. Please try again later.</td></tr>';
@@ -402,7 +345,7 @@
         upcomingSchedules = upcomingResult;
       }
 
-      // Process past schedules
+      //process past schedules
       if (pastResult.error) {
         console.error("Could not fetch past schedules:", pastResult.error);
         pastCardsContainer.innerHTML = '<div class="col-12"><p class="text-center text-danger">Could not load past schedule archive. Please try again later.</p></div>';
@@ -410,20 +353,15 @@
         pastSchedules = pastResult;
       }
 
-      // Render the page content with the (potentially empty) data.
       renderUpcomingTable(upcomingSchedules);
       const initialPastSchedules = getFilteredPastSchedules();
       renderPastCards(initialPastSchedules, currentPage);
       setupPagination(initialPastSchedules);
     }
 
-    // --- EVENT LISTENERS ---
-
-
     document.getElementById('videoModal').addEventListener('hidden.bs.modal', () => {
       videoIframe.src = '';
     });
-    // Make functions available globally so inline onclick attributes can find them
     window.openVideoModal = openVideoModal;
     window.changePage = changePage;
   </script>

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/navAndFooter.css">
     <link rel="stylesheet" href="css/shoutout.css">
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #9cbcd3;">
@@ -95,8 +94,8 @@
                     <h5>Connect</h5>
                     <ul class="list-unstyled mb-0">
                         <li><a href="contactUs_page.html">Contact Us</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/foreignbodies/?hl=en">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/NYPForeignBodies/">Facebook</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-12 text-md-start">
@@ -159,8 +158,6 @@
                 shoutoutBoard.appendChild(div);
             });
         }
-
-        // Initial render
         renderShoutouts();
 
         handleShoutoutSubmit = (e) => {
@@ -178,6 +175,6 @@
                 renderShoutouts();
                 document.getElementById('shoutoutForm').reset();
             }
-            return false; // Prevent default form submission
+            return false; // to prevent default form submission
         }
     </script>
