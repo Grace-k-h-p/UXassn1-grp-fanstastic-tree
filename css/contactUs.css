@@ -130,7 +130,27 @@ body {
     background-color: #0056b3;
 }
 
+/* Make form responsive only on small screens */
+@media (max-width: 768px) {
+  .form-box {
+    margin-left: 0;      /* remove left gap */
+    width: 100%;         /* take full width */
+    max-width: 100%;     /* prevent cutoff */
+  }
 
+  /* Stack the first/last name inputs vertically */
+  .contact-form .row.g-2 > .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Let container height expand naturally */
+  .container-contact {
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+  }
+}
 
 
 
